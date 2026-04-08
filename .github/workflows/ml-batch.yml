@@ -70,7 +70,9 @@ jobs:
 
       - name: Prepare demo input file
         run: |
-          cp archive/input_data_20260408_162443.csv input/input_data.csv
+          mkdir -p input
+          cp input/input_data.csv input/input_data.csv
+
 
       - name: Build Docker image
         run: |
