@@ -1,0 +1,12 @@
+.venv
+.git
+.github
+__pycache__
+.pytest_cache
+output
+archive
+failed
+logs
+models
+predictions.db
+README.md

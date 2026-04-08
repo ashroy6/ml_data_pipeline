@@ -1,0 +1,1501 @@
+customer_id,age,monthly_spend,tenure_months,support_tickets,last_login_days,contract_type,payment_method,region,num_products,discount_used,avg_session_minutes,churn
+1001,61,75.8,29,2,6,Monthly,UPI,South,5,0,58.1,0
+1002,65,61.09,1,2,44,Monthly,Card,East,4,1,30.0,1
+1003,37,185.22,49,1,35,Annual,UPI,North,3,1,57.0,1
+1004,27,88.42,21,5,22,Monthly,Bank Transfer,East,2,1,68.2,1
+1005,38,245.69,42,0,14,Annual,Bank Transfer,South,1,1,41.1,0
+1006,62,99.41,72,8,16,Monthly,Card,South,5,1,85.8,1
+1007,28,157.54,9,6,24,Monthly,Card,West,5,1,52.6,1
+1008,38,131.53,56,2,29,Annual,Card,East,1,1,92.5,1
+1009,33,80.54,42,7,1,Monthly,UPI,North,1,1,84.1,1
+1010,52,338.52,17,7,35,Annual,Wallet,South,2,1,52.5,0
+1011,46,258.46,67,7,7,Annual,Bank Transfer,West,2,0,10.8,1
+1012,25,273.92,66,3,17,Annual,UPI,North,4,0,53.5,0
+1013,27,50.54,53,7,3,Monthly,Card,West,1,0,41.2,1
+1014,38,103.37,57,8,6,Monthly,UPI,North,1,0,92.2,1
+1015,24,71.63,34,7,18,Monthly,Card,West,4,1,18.9,1
+1016,58,98.9,8,8,5,Monthly,Wallet,South,2,0,58.6,1
+1017,60,69.37,34,3,42,Monthly,UPI,East,3,0,28.9,1
+1018,60,216.35,69,3,32,Annual,Wallet,North,3,0,89.0,0
+1019,60,155.75,71,4,42,Annual,UPI,North,1,0,28.8,1
+1020,64,85.2,33,0,5,Quarterly,Card,West,4,1,9.0,0
+1021,56,101.87,70,0,23,Monthly,Card,South,5,0,43.7,1
+1022,64,89.7,20,3,10,Monthly,Card,West,2,1,7.2,0
+1023,38,100.89,5,7,14,Monthly,UPI,West,2,1,36.5,1
+1024,25,133.46,69,5,1,Annual,Card,West,1,1,21.1,1
+1025,59,382.85,33,0,45,Annual,Card,South,4,0,51.8,0
+1026,63,262.86,39,8,19,Annual,Bank Transfer,North,4,1,41.2,0
+1027,60,128.26,39,4,13,Quarterly,Card,North,4,1,46.8,1
+1028,26,60.05,12,3,43,Monthly,UPI,East,3,0,77.6,1
+1029,61,172.98,64,6,15,Quarterly,UPI,West,2,0,85.3,0
+1030,50,133.76,59,2,29,Monthly,Card,North,5,1,90.5,1
+1031,31,207.8,32,4,33,Annual,Bank Transfer,East,4,0,29.7,1
+1032,35,53.43,9,6,26,Monthly,Card,South,3,1,42.4,1
+1033,57,102.05,39,6,26,Monthly,Card,East,5,0,48.9,1
+1034,50,227.48,51,0,5,Annual,Wallet,North,4,0,83.0,0
+1035,38,356.0,11,7,1,Annual,UPI,East,5,0,95.0,0
+1036,33,259.36,17,7,42,Annual,Bank Transfer,South,1,0,46.9,0
+1037,31,288.48,40,6,25,Annual,Card,North,2,0,58.3,0
+1038,57,368.59,48,1,32,Annual,Card,West,3,0,81.5,0
+1039,48,62.33,69,7,29,Monthly,Bank Transfer,East,4,1,34.0,1
+1040,63,91.25,24,7,13,Monthly,Card,East,3,1,35.6,1
+1041,47,73.36,63,7,1,Monthly,UPI,West,1,1,24.9,1
+1042,56,86.86,40,4,14,Monthly,UPI,East,1,0,33.4,1
+1043,58,193.46,13,3,18,Annual,Bank Transfer,East,2,1,21.1,0
+1044,29,102.27,2,4,30,Quarterly,UPI,North,4,1,35.7,1
+1045,57,79.33,39,1,15,Quarterly,Card,South,1,1,59.6,0
+1046,48,69.68,27,3,16,Monthly,Bank Transfer,North,1,0,26.6,1
+1047,39,397.15,10,3,16,Annual,UPI,West,5,0,43.3,1
+1048,40,118.99,57,1,29,Quarterly,UPI,East,3,1,89.8,1
+1049,37,67.23,35,0,11,Monthly,Card,North,4,1,87.4,1
+1050,42,64.25,43,6,44,Monthly,Card,South,4,1,64.6,1
+1051,46,221.67,70,7,26,Annual,UPI,North,1,0,51.7,1
+1052,39,80.22,4,3,45,Monthly,UPI,North,2,1,54.6,1
+1053,30,59.24,54,7,30,Monthly,UPI,East,2,1,54.6,1
+1054,47,117.16,1,4,19,Monthly,UPI,East,5,1,82.9,0
+1055,33,291.8,30,6,2,Annual,Card,West,3,1,68.5,0
+1056,23,37.9,13,7,6,Monthly,Wallet,East,5,1,6.4,1
+1057,60,162.73,69,6,20,Quarterly,Bank Transfer,East,4,0,60.6,0
+1058,61,267.41,39,0,2,Annual,Card,South,3,0,31.4,1
+1059,26,182.43,64,2,14,Quarterly,Card,South,4,1,46.4,1
+1060,43,199.5,33,7,19,Annual,Card,West,2,1,81.8,1
+1061,63,90.45,64,4,14,Monthly,Card,North,5,1,24.7,1
+1062,27,170.89,57,0,37,Annual,Bank Transfer,East,3,0,13.1,0
+1063,54,55.77,33,7,18,Monthly,Card,South,3,0,47.1,1
+1064,56,134.06,34,8,7,Monthly,UPI,North,4,1,65.6,1
+1065,22,121.72,29,1,40,Quarterly,Wallet,East,4,1,63.4,1
+1066,55,96.73,20,6,41,Monthly,Bank Transfer,West,1,1,60.4,1
+1067,44,108.05,8,6,17,Monthly,UPI,East,2,0,90.4,1
+1068,42,93.5,9,8,13,Monthly,Card,South,5,0,78.2,0
+1069,29,41.73,4,2,0,Monthly,UPI,North,3,0,58.0,1
+1070,49,245.12,58,8,14,Annual,Bank Transfer,North,5,0,70.5,0
+1071,46,78.86,10,1,20,Monthly,Card,West,5,0,10.9,1
+1072,50,119.41,71,3,27,Monthly,Card,North,4,0,42.2,1
+1073,30,126.79,11,1,27,Quarterly,Bank Transfer,North,1,1,78.1,1
+1074,63,200.53,37,4,22,Annual,Card,North,1,0,18.9,1
+1075,35,178.39,35,0,11,Annual,UPI,North,3,1,87.9,0
+1076,22,63.19,54,7,21,Monthly,Bank Transfer,West,2,1,33.0,1
+1077,24,140.66,63,7,26,Quarterly,Card,West,3,0,72.9,1
+1078,23,56.37,1,3,19,Monthly,Wallet,North,2,0,73.8,1
+1079,35,56.63,10,6,2,Monthly,UPI,East,4,0,46.4,1
+1080,46,56.04,47,1,27,Monthly,Card,West,1,0,44.2,1
+1081,25,58.94,45,5,41,Monthly,Card,South,2,0,14.3,0
+1082,61,103.77,42,5,9,Monthly,UPI,West,4,0,47.2,1
+1083,23,126.14,12,8,24,Monthly,UPI,North,4,0,45.5,1
+1084,27,215.27,65,2,2,Annual,UPI,North,2,1,94.2,0
+1085,64,203.84,9,5,6,Quarterly,UPI,East,5,1,30.6,1
+1086,30,343.09,17,1,19,Annual,Card,West,5,1,62.9,0
+1087,26,88.67,3,5,19,Quarterly,Card,East,2,0,35.8,0
+1088,53,323.52,44,2,38,Annual,UPI,North,4,0,19.6,1
+1089,64,169.74,58,3,34,Annual,Wallet,East,2,1,91.9,1
+1090,39,341.27,21,3,38,Annual,Bank Transfer,West,2,1,9.7,1
+1091,26,231.64,56,1,14,Annual,Card,South,4,1,88.7,1
+1092,41,226.33,19,2,2,Annual,UPI,East,3,1,67.6,1
+1093,30,67.55,15,4,15,Monthly,UPI,West,3,0,9.3,1
+1094,22,215.12,38,6,0,Quarterly,Bank Transfer,South,5,1,26.7,0
+1095,53,235.52,50,7,2,Annual,Bank Transfer,North,4,1,27.8,0
+1096,42,49.64,23,7,44,Monthly,Card,East,4,0,78.0,1
+1097,23,97.59,70,7,16,Monthly,Card,West,1,0,30.7,1
+1098,46,290.42,44,2,31,Annual,UPI,West,4,1,88.2,0
+1099,55,123.95,38,4,28,Monthly,Card,East,5,1,20.0,1
+1100,61,132.15,52,5,32,Annual,Wallet,North,2,0,17.9,1
+1101,45,291.13,58,5,23,Annual,Card,South,4,0,56.7,0
+1102,52,60.96,34,4,45,Monthly,Wallet,North,4,0,94.7,1
+1103,49,376.33,45,1,35,Annual,UPI,East,5,1,85.2,0
+1104,28,332.67,64,0,23,Annual,UPI,South,5,1,47.1,0
+1105,51,56.92,17,5,41,Monthly,UPI,North,1,1,46.9,1
+1106,29,127.77,16,8,9,Monthly,Wallet,North,3,0,19.6,1
+1107,33,153.88,39,8,5,Quarterly,Bank Transfer,South,5,0,58.3,0
+1108,23,373.66,34,3,36,Annual,Card,North,4,0,49.8,0
+1109,40,92.32,57,6,30,Monthly,UPI,South,4,0,35.6,1
+1110,44,54.88,60,1,17,Monthly,Card,South,4,0,17.7,0
+1111,41,237.63,21,7,32,Annual,UPI,South,4,1,84.1,1
+1112,24,41.14,37,8,0,Monthly,Bank Transfer,West,1,1,17.1,1
+1113,44,154.72,71,4,39,Quarterly,Card,West,5,0,16.6,1
+1114,59,64.93,5,2,45,Monthly,Bank Transfer,North,3,1,51.7,1
+1115,60,169.45,65,8,34,Annual,Card,East,4,1,47.7,0
+1116,65,203.86,30,0,37,Quarterly,Bank Transfer,East,4,0,52.2,0
+1117,65,79.22,54,2,26,Monthly,Card,East,2,1,50.2,1
+1118,56,142.04,41,2,29,Monthly,UPI,West,5,1,54.2,1
+1119,36,84.67,37,3,44,Monthly,Card,East,4,1,48.2,1
+1120,46,163.69,38,0,18,Annual,Wallet,South,1,1,88.2,0
+1121,38,43.56,32,0,42,Monthly,Bank Transfer,South,5,0,62.4,1
+1122,56,264.85,62,3,18,Annual,Card,West,3,1,63.1,0
+1123,32,86.79,51,7,11,Monthly,UPI,North,3,0,5.8,1
+1124,52,140.7,35,3,7,Annual,Card,West,3,0,70.8,0
+1125,33,31.24,55,8,20,Monthly,UPI,West,1,1,65.2,1
+1126,38,296.49,34,5,44,Annual,Card,North,2,0,65.1,0
+1127,65,91.51,48,3,14,Monthly,Wallet,East,2,1,18.8,1
+1128,63,340.54,68,7,33,Annual,UPI,North,3,0,87.6,1
+1129,54,51.38,12,8,28,Monthly,UPI,West,1,1,16.9,1
+1130,37,127.3,6,6,22,Annual,UPI,North,1,0,89.1,0
+1131,62,243.57,58,6,24,Annual,Card,West,1,0,63.8,1
+1132,21,381.58,70,6,34,Annual,Wallet,West,4,0,27.3,0
+1133,47,164.67,31,3,4,Quarterly,Wallet,North,1,0,45.2,0
+1134,24,91.84,41,5,15,Monthly,Wallet,South,3,0,93.7,0
+1135,32,127.29,7,5,41,Quarterly,Card,West,4,1,67.7,1
+1136,30,346.31,54,8,33,Annual,Wallet,West,2,1,26.9,0
+1137,33,111.3,10,3,37,Monthly,Card,North,5,0,48.1,0
+1138,28,223.75,27,6,15,Annual,UPI,South,5,1,74.8,0
+1139,27,236.65,27,5,20,Annual,UPI,East,4,0,55.6,0
+1140,30,74.12,64,8,41,Monthly,Card,South,3,1,73.7,1
+1141,29,282.65,68,0,4,Annual,Bank Transfer,North,1,0,42.1,0
+1142,60,93.56,63,0,0,Quarterly,Wallet,West,5,1,6.1,0
+1143,32,74.32,31,3,39,Monthly,Card,South,5,1,78.4,0
+1144,35,51.9,5,1,25,Monthly,UPI,North,4,1,54.7,1
+1145,57,222.86,30,3,44,Annual,Wallet,North,5,1,29.4,1
+1146,41,105.98,51,1,19,Monthly,Card,South,2,0,56.0,0
+1147,65,227.39,7,1,27,Annual,Bank Transfer,East,2,0,35.7,1
+1148,49,89.25,56,2,43,Monthly,Card,West,5,1,12.7,1
+1149,61,56.33,14,1,0,Monthly,Card,East,3,1,37.4,1
+1150,22,97.84,50,0,18,Monthly,Bank Transfer,East,4,1,75.1,0
+1151,31,75.03,19,1,10,Monthly,Card,West,4,1,42.9,1
+1152,33,92.16,51,5,39,Monthly,Card,North,4,1,44.6,1
+1153,65,101.76,41,4,44,Monthly,Card,West,4,0,34.3,0
+1154,32,88.84,27,7,18,Quarterly,Bank Transfer,West,1,1,65.6,1
+1155,49,285.04,69,8,44,Annual,Bank Transfer,West,4,0,76.2,0
+1156,63,149.62,52,5,27,Quarterly,Card,North,1,0,13.9,1
+1157,50,330.3,45,0,30,Annual,Bank Transfer,South,1,1,42.4,0
+1158,34,71.57,57,7,20,Monthly,Card,North,1,1,9.0,0
+1159,36,38.83,72,6,29,Monthly,Bank Transfer,East,2,1,61.7,1
+1160,48,37.74,36,1,36,Monthly,UPI,South,1,0,37.9,1
+1161,45,144.19,46,7,39,Quarterly,Bank Transfer,East,2,1,87.7,1
+1162,30,96.07,50,6,11,Monthly,Card,South,4,0,54.9,1
+1163,21,68.22,72,8,41,Monthly,Card,West,4,1,66.6,1
+1164,39,80.75,22,7,36,Monthly,Card,East,4,0,56.5,1
+1165,49,136.98,32,4,2,Monthly,Wallet,North,4,1,36.4,0
+1166,58,151.27,22,2,13,Quarterly,UPI,West,2,0,56.3,0
+1167,53,208.5,18,6,3,Annual,UPI,North,3,0,68.1,1
+1168,30,166.11,49,7,4,Quarterly,Card,West,1,1,51.4,1
+1169,26,193.83,9,8,25,Annual,Bank Transfer,East,2,1,79.2,0
+1170,42,166.53,13,7,1,Annual,UPI,North,1,0,44.7,0
+1171,31,314.3,47,4,5,Annual,UPI,North,3,0,9.7,1
+1172,34,101.95,67,7,0,Monthly,Card,South,1,1,78.5,0
+1173,27,36.04,18,6,8,Monthly,Card,East,2,0,52.7,1
+1174,47,149.7,12,1,8,Quarterly,Card,South,1,1,36.6,0
+1175,59,123.52,39,3,33,Monthly,Wallet,North,5,0,72.3,1
+1176,52,197.6,47,5,8,Quarterly,Card,North,4,1,37.9,1
+1177,37,75.5,65,4,40,Monthly,Wallet,West,5,1,43.1,1
+1178,34,264.33,51,1,19,Annual,Card,East,4,0,10.2,0
+1179,32,91.67,21,7,22,Monthly,UPI,North,5,1,20.0,1
+1180,48,80.52,64,7,32,Monthly,Card,North,3,0,50.0,1
+1181,35,150.16,32,0,30,Annual,Card,North,3,1,87.8,0
+1182,35,140.54,35,1,36,Monthly,Card,East,3,0,50.2,1
+1183,50,311.47,42,1,35,Annual,UPI,East,4,0,38.2,0
+1184,33,122.21,20,0,26,Annual,Bank Transfer,South,1,0,53.7,1
+1185,40,110.99,54,7,3,Monthly,Bank Transfer,South,2,1,13.4,0
+1186,26,188.27,10,0,27,Quarterly,Bank Transfer,West,2,0,31.3,1
+1187,35,54.89,20,1,10,Monthly,Card,North,4,1,33.3,0
+1188,26,55.66,28,5,9,Monthly,UPI,North,1,0,92.2,0
+1189,49,86.67,60,1,8,Quarterly,Bank Transfer,North,1,0,10.6,0
+1190,26,214.12,3,1,12,Quarterly,Card,North,4,0,13.3,0
+1191,48,181.06,49,6,11,Annual,Card,North,3,0,86.7,0
+1192,52,103.92,12,4,24,Monthly,Bank Transfer,North,2,1,23.0,0
+1193,43,89.29,65,5,24,Monthly,UPI,East,3,0,7.3,1
+1194,43,305.36,13,3,42,Annual,Wallet,South,2,1,53.0,0
+1195,45,38.38,23,3,37,Monthly,UPI,South,3,1,87.3,1
+1196,52,129.86,12,0,14,Monthly,Card,North,5,0,6.8,1
+1197,41,64.91,15,8,23,Monthly,Card,South,1,1,68.4,1
+1198,48,245.73,23,8,44,Annual,Wallet,East,5,1,25.1,0
+1199,65,194.44,24,5,39,Annual,Card,North,2,0,89.3,0
+1200,26,289.51,58,0,16,Annual,UPI,East,2,0,67.4,0
+1201,31,159.49,45,8,24,Annual,Bank Transfer,West,1,1,76.0,1
+1202,22,114.26,44,2,24,Monthly,Wallet,North,2,0,54.2,1
+1203,62,84.1,7,1,21,Monthly,UPI,South,2,0,41.8,1
+1204,46,142.34,7,5,0,Quarterly,UPI,South,4,0,31.5,1
+1205,26,67.22,61,7,42,Monthly,Card,West,3,0,62.8,1
+1206,37,99.46,20,1,5,Monthly,Card,North,3,1,92.4,1
+1207,51,80.75,11,6,45,Quarterly,Card,East,1,0,15.8,1
+1208,48,55.76,19,4,20,Monthly,UPI,South,1,0,39.9,1
+1209,60,120.54,54,2,9,Quarterly,UPI,North,5,0,88.2,1
+1210,45,162.03,5,2,17,Quarterly,Bank Transfer,West,4,0,60.6,1
+1211,51,176.98,44,4,19,Annual,UPI,North,3,1,82.2,0
+1212,41,109.11,25,7,13,Monthly,Card,North,4,1,73.4,1
+1213,29,165.8,23,3,12,Annual,Bank Transfer,North,1,0,8.0,1
+1214,28,106.83,58,2,30,Quarterly,Card,West,5,1,36.0,1
+1215,57,244.79,29,3,17,Annual,Card,South,4,0,82.8,0
+1216,35,78.18,36,6,24,Monthly,UPI,East,3,1,27.7,1
+1217,63,166.46,39,1,30,Annual,UPI,East,1,1,94.0,1
+1218,30,119.37,52,5,43,Monthly,Card,North,2,0,64.0,1
+1219,57,167.32,69,7,42,Annual,Card,South,3,1,81.1,1
+1220,56,262.03,12,3,22,Annual,Card,East,2,1,42.8,1
+1221,61,158.05,61,3,32,Quarterly,Wallet,North,1,1,52.7,0
+1222,50,15.0,11,7,21,Monthly,UPI,South,2,1,62.1,1
+1223,26,63.38,52,6,30,Monthly,Card,West,4,0,8.4,1
+1224,64,39.62,45,4,8,Monthly,UPI,South,1,1,50.3,1
+1225,54,118.0,44,7,22,Monthly,UPI,South,2,0,90.3,1
+1226,58,39.6,49,4,34,Monthly,Card,North,5,0,58.5,1
+1227,28,95.66,27,0,19,Monthly,Bank Transfer,South,4,0,64.6,0
+1228,28,130.78,26,3,16,Monthly,UPI,West,5,0,37.2,1
+1229,36,108.35,64,2,5,Monthly,UPI,North,5,0,70.1,1
+1230,27,151.83,47,5,27,Annual,UPI,East,1,0,81.6,0
+1231,60,83.82,44,2,7,Monthly,UPI,East,4,1,91.6,0
+1232,28,85.18,14,6,37,Monthly,UPI,South,4,1,21.3,0
+1233,29,123.85,57,0,4,Monthly,Bank Transfer,West,3,1,6.1,0
+1234,42,86.63,56,3,30,Monthly,UPI,North,3,1,18.4,1
+1235,51,218.78,63,5,15,Annual,UPI,North,3,1,9.5,0
+1236,49,23.22,16,7,41,Monthly,Bank Transfer,East,1,0,41.3,1
+1237,53,133.29,44,5,3,Quarterly,UPI,West,2,1,34.9,1
+1238,63,64.32,71,8,23,Monthly,Card,East,1,0,85.7,1
+1239,28,329.57,25,5,6,Annual,Card,West,4,0,88.4,0
+1240,29,186.35,71,6,37,Annual,Card,North,4,0,67.3,1
+1241,45,42.89,36,6,21,Monthly,Bank Transfer,South,3,1,77.4,1
+1242,41,347.28,26,3,39,Annual,Wallet,South,3,1,87.9,0
+1243,28,165.98,69,4,27,Annual,Bank Transfer,West,1,0,7.3,1
+1244,37,120.07,27,8,2,Monthly,Card,East,3,1,14.2,1
+1245,65,78.2,50,6,43,Monthly,UPI,West,3,0,6.2,0
+1246,62,45.93,25,4,28,Monthly,Bank Transfer,South,2,0,21.8,1
+1247,58,222.12,20,0,9,Annual,Card,West,3,0,74.6,1
+1248,41,71.6,65,2,26,Monthly,Wallet,North,5,1,13.3,1
+1249,54,100.49,15,5,28,Monthly,Bank Transfer,North,2,0,91.3,1
+1250,39,92.53,66,8,28,Monthly,Bank Transfer,East,4,0,31.7,1
+1251,55,141.49,55,1,13,Monthly,Card,South,5,1,63.2,1
+1252,24,84.91,30,4,26,Monthly,Card,North,4,1,61.7,1
+1253,58,110.45,65,1,18,Monthly,UPI,East,3,0,30.3,1
+1254,46,147.44,19,4,43,Annual,UPI,East,3,0,54.8,0
+1255,40,64.2,28,6,41,Monthly,UPI,East,5,0,19.5,0
+1256,56,57.08,9,4,6,Monthly,Bank Transfer,East,2,1,90.6,1
+1257,52,73.4,20,5,20,Monthly,Bank Transfer,East,4,0,5.4,1
+1258,42,310.08,40,7,35,Annual,Bank Transfer,East,1,0,63.1,0
+1259,61,102.92,65,0,37,Monthly,Card,North,5,1,74.2,1
+1260,30,132.04,18,7,32,Monthly,Card,East,5,0,40.7,1
+1261,53,43.31,62,5,2,Monthly,Card,South,2,1,25.9,1
+1262,50,219.36,14,8,40,Annual,Card,East,3,1,57.1,1
+1263,37,74.32,46,5,31,Monthly,Wallet,West,4,0,50.2,1
+1264,44,155.44,54,5,7,Quarterly,UPI,South,4,1,48.1,0
+1265,29,70.8,8,2,16,Quarterly,Card,South,2,1,58.9,1
+1266,49,111.81,22,3,26,Quarterly,Bank Transfer,West,5,0,76.5,1
+1267,50,142.12,50,2,6,Quarterly,Card,West,1,0,52.0,0
+1268,59,99.03,12,7,42,Monthly,UPI,North,2,0,85.7,1
+1269,35,195.74,45,1,27,Annual,Bank Transfer,West,2,1,47.9,1
+1270,21,165.75,49,3,44,Quarterly,Card,North,3,1,37.6,1
+1271,38,217.09,53,8,35,Annual,Card,South,4,0,38.3,0
+1272,63,93.84,13,3,32,Monthly,Card,South,4,1,77.1,0
+1273,30,113.51,9,4,14,Monthly,Bank Transfer,North,3,0,59.8,0
+1274,24,323.71,57,0,12,Annual,UPI,West,5,1,22.5,0
+1275,62,74.5,52,5,42,Monthly,Card,East,4,1,57.7,0
+1276,58,80.65,29,3,29,Monthly,Wallet,East,4,0,28.5,0
+1277,37,264.89,57,6,36,Annual,UPI,East,4,0,73.2,1
+1278,25,75.16,30,5,26,Monthly,UPI,South,3,0,68.1,1
+1279,32,105.79,24,3,31,Monthly,Card,East,2,0,71.2,1
+1280,27,109.24,1,8,2,Monthly,Card,West,4,1,60.9,0
+1281,53,114.24,7,8,27,Monthly,Card,South,4,0,50.2,1
+1282,65,74.6,13,5,23,Monthly,UPI,West,5,1,21.8,1
+1283,47,352.47,36,7,11,Annual,Card,West,5,0,93.1,0
+1284,33,117.17,61,0,11,Monthly,Wallet,South,4,1,17.1,1
+1285,57,106.64,8,3,16,Monthly,Card,South,4,0,45.5,1
+1286,28,77.11,69,2,18,Monthly,UPI,South,3,1,65.6,0
+1287,30,283.4,54,6,4,Annual,Bank Transfer,East,1,0,35.9,0
+1288,44,281.16,53,2,11,Annual,Bank Transfer,West,1,0,70.5,1
+1289,25,323.66,4,6,33,Annual,Bank Transfer,North,1,0,28.6,1
+1290,61,82.94,4,0,42,Monthly,Bank Transfer,South,3,1,82.8,0
+1291,55,101.31,68,8,19,Monthly,Bank Transfer,West,3,1,53.6,1
+1292,29,60.26,63,7,19,Monthly,Bank Transfer,North,1,1,76.8,1
+1293,36,60.96,49,3,16,Monthly,UPI,West,1,1,61.3,0
+1294,55,160.55,24,2,18,Annual,Card,North,1,1,60.6,0
+1295,32,300.72,57,0,14,Annual,Card,South,1,0,6.3,0
+1296,23,85.94,8,4,25,Monthly,UPI,South,1,1,21.3,1
+1297,45,249.09,26,7,6,Annual,Card,North,5,0,47.6,0
+1298,54,72.01,26,5,3,Monthly,Bank Transfer,East,2,0,26.2,1
+1299,23,182.55,48,1,15,Quarterly,UPI,South,2,1,13.2,0
+1300,65,33.93,30,5,35,Monthly,Card,West,3,1,71.0,1
+1301,56,99.15,24,8,22,Monthly,UPI,South,3,1,29.8,1
+1302,37,38.16,24,0,39,Monthly,Bank Transfer,West,3,0,33.9,1
+1303,30,164.82,15,1,33,Quarterly,Card,East,1,0,80.2,1
+1304,45,207.27,7,5,14,Quarterly,Bank Transfer,East,5,0,6.2,1
+1305,44,93.01,48,0,39,Quarterly,Wallet,West,3,0,71.1,1
+1306,45,102.67,23,8,35,Monthly,Bank Transfer,South,4,0,74.0,1
+1307,56,68.98,69,7,22,Monthly,Card,South,3,1,81.0,1
+1308,45,298.71,47,7,28,Annual,Wallet,East,4,0,70.4,1
+1309,35,133.93,71,8,35,Monthly,Card,East,5,0,13.5,1
+1310,40,89.28,10,5,30,Monthly,Card,South,2,1,79.3,1
+1311,57,96.45,45,6,26,Monthly,UPI,East,1,0,72.3,1
+1312,41,116.95,20,0,43,Monthly,Card,South,4,1,72.8,1
+1313,51,110.88,34,1,25,Quarterly,Card,West,5,1,74.6,1
+1314,60,181.53,10,4,27,Annual,Bank Transfer,South,3,0,15.1,0
+1315,31,155.31,19,7,2,Annual,Bank Transfer,West,2,0,66.7,0
+1316,30,197.2,44,1,19,Annual,UPI,North,4,1,7.0,0
+1317,30,148.29,68,0,16,Quarterly,UPI,West,2,0,30.6,1
+1318,38,178.88,14,0,18,Quarterly,Wallet,East,4,0,93.2,1
+1319,33,99.15,6,3,33,Monthly,Bank Transfer,North,3,1,49.1,0
+1320,53,119.74,50,0,35,Monthly,Card,East,3,0,18.7,1
+1321,61,96.62,55,4,38,Quarterly,Card,South,3,1,53.8,1
+1322,54,160.45,21,5,4,Annual,Card,South,5,0,21.6,0
+1323,40,122.15,20,3,6,Monthly,Wallet,East,2,0,7.4,1
+1324,22,68.1,18,8,38,Monthly,UPI,West,4,1,21.6,0
+1325,38,257.02,27,1,11,Annual,Card,South,4,1,66.9,0
+1326,41,53.12,67,1,28,Monthly,Wallet,North,4,0,84.0,1
+1327,24,68.36,37,7,10,Monthly,Card,East,4,1,60.2,0
+1328,28,105.32,51,6,20,Monthly,Bank Transfer,South,4,0,21.1,1
+1329,31,203.63,58,5,5,Annual,Card,North,5,1,70.4,1
+1330,42,161.63,21,2,11,Quarterly,UPI,South,1,1,32.7,0
+1331,21,107.28,64,7,34,Quarterly,Card,West,1,1,26.4,1
+1332,56,82.88,7,2,9,Monthly,Bank Transfer,South,1,1,8.3,1
+1333,47,239.66,72,2,29,Annual,Card,East,5,1,88.8,1
+1334,56,116.16,36,5,33,Monthly,Bank Transfer,North,4,0,67.6,1
+1335,65,152.91,55,5,16,Quarterly,UPI,East,5,1,88.4,0
+1336,35,196.77,16,0,29,Annual,Wallet,North,1,0,77.0,1
+1337,33,136.2,40,4,32,Quarterly,Card,North,5,1,74.0,0
+1338,33,59.73,61,0,41,Monthly,Card,West,2,1,19.0,0
+1339,24,348.37,72,8,1,Annual,Card,East,2,1,77.0,0
+1340,61,62.01,24,1,19,Monthly,Card,West,3,0,29.4,1
+1341,32,27.83,12,7,32,Monthly,UPI,South,1,1,86.4,1
+1342,27,270.13,27,0,29,Annual,Wallet,South,4,0,5.4,1
+1343,54,281.99,40,3,20,Annual,UPI,North,2,0,30.8,1
+1344,60,106.9,71,5,17,Quarterly,Card,East,2,1,56.7,1
+1345,64,96.8,55,6,11,Monthly,Card,North,5,1,60.5,0
+1346,50,211.79,13,7,19,Quarterly,Card,West,4,1,25.9,0
+1347,63,53.61,59,7,1,Monthly,UPI,East,1,1,15.2,1
+1348,46,317.26,72,1,19,Annual,UPI,East,5,1,41.1,0
+1349,65,182.98,44,8,44,Quarterly,UPI,West,2,0,64.6,1
+1350,56,68.5,52,1,38,Monthly,Card,East,1,1,34.5,1
+1351,21,319.3,69,4,24,Annual,UPI,West,5,1,22.6,0
+1352,48,117.99,2,8,25,Annual,Wallet,North,2,1,10.6,1
+1353,39,177.89,41,6,25,Annual,Card,West,4,1,54.1,0
+1354,30,63.8,18,0,4,Monthly,UPI,South,1,0,69.9,1
+1355,50,144.61,24,7,32,Annual,UPI,West,4,1,39.6,0
+1356,38,94.85,5,0,36,Monthly,Bank Transfer,East,4,1,15.2,0
+1357,38,87.54,32,7,40,Monthly,Card,North,1,1,60.2,1
+1358,42,91.56,38,2,2,Monthly,Wallet,East,5,1,70.4,0
+1359,60,71.3,65,1,17,Monthly,Bank Transfer,South,3,0,60.4,0
+1360,63,50.08,31,7,11,Monthly,UPI,East,5,0,35.9,0
+1361,45,100.0,27,5,3,Monthly,Card,South,3,0,9.7,1
+1362,64,340.25,68,6,0,Annual,Bank Transfer,South,3,1,39.4,1
+1363,48,143.12,43,4,17,Quarterly,UPI,East,1,1,63.9,1
+1364,42,72.47,71,0,43,Quarterly,Wallet,East,1,0,6.1,1
+1365,22,162.31,16,1,5,Quarterly,Card,South,5,0,38.8,1
+1366,39,41.19,36,6,44,Monthly,Wallet,West,3,1,19.6,0
+1367,37,144.73,51,2,41,Monthly,Card,South,4,0,17.9,1
+1368,25,43.98,3,7,9,Monthly,UPI,West,1,0,64.8,0
+1369,52,89.9,70,3,0,Monthly,Card,North,4,1,15.9,0
+1370,62,116.71,11,7,18,Monthly,Bank Transfer,East,2,0,54.9,1
+1371,52,25.67,18,0,12,Monthly,Bank Transfer,South,1,0,49.0,1
+1372,22,123.22,52,1,13,Monthly,Card,North,5,1,89.6,0
+1373,52,88.88,32,2,0,Quarterly,Bank Transfer,North,2,0,86.4,0
+1374,28,129.95,9,3,27,Monthly,UPI,South,3,1,34.2,1
+1375,58,138.12,19,6,10,Monthly,Card,East,3,0,44.5,0
+1376,22,294.94,23,1,45,Annual,Card,North,5,1,42.5,1
+1377,47,17.17,24,7,39,Monthly,Card,North,1,1,36.3,1
+1378,55,107.17,36,0,12,Monthly,Bank Transfer,South,1,0,66.7,0
+1379,39,50.62,6,1,3,Monthly,Card,West,5,0,19.2,1
+1380,47,61.38,30,1,20,Monthly,UPI,East,2,0,26.3,1
+1381,48,71.05,23,6,23,Monthly,Wallet,West,2,1,69.8,1
+1382,29,116.4,22,5,14,Monthly,Bank Transfer,West,3,0,76.1,1
+1383,54,116.34,60,4,0,Monthly,Wallet,West,4,0,27.3,0
+1384,47,243.16,65,0,27,Annual,Card,West,5,1,48.1,1
+1385,47,305.01,31,1,1,Annual,Card,East,4,1,19.6,1
+1386,46,113.32,1,1,24,Monthly,UPI,West,3,0,31.7,1
+1387,60,157.44,66,5,3,Annual,UPI,North,1,1,37.9,0
+1388,34,76.12,62,3,14,Monthly,Card,North,3,1,85.8,1
+1389,28,61.21,58,5,43,Monthly,Bank Transfer,East,1,0,85.3,1
+1390,38,69.83,27,8,40,Monthly,Card,South,1,1,42.5,1
+1391,33,129.74,67,5,26,Monthly,UPI,South,5,1,64.0,1
+1392,57,21.9,34,3,30,Monthly,UPI,South,3,1,74.3,1
+1393,39,49.03,21,3,7,Monthly,Card,South,1,1,56.7,0
+1394,30,74.55,69,4,7,Monthly,Bank Transfer,South,1,1,88.8,1
+1395,53,116.94,38,2,36,Monthly,UPI,West,4,1,67.0,1
+1396,35,77.43,25,8,14,Monthly,Card,North,3,0,7.0,1
+1397,41,123.82,47,6,9,Quarterly,Bank Transfer,North,4,1,39.8,1
+1398,49,249.15,37,2,27,Annual,Card,West,4,0,80.2,1
+1399,58,191.54,35,6,11,Annual,Card,West,5,1,68.9,1
+1400,40,157.14,29,0,0,Annual,Card,West,2,1,32.0,1
+1401,65,161.41,64,1,38,Quarterly,Card,East,3,1,55.9,1
+1402,57,47.82,19,5,29,Monthly,Card,North,2,1,19.7,1
+1403,25,107.8,13,2,34,Monthly,UPI,South,3,1,79.4,1
+1404,30,77.8,63,6,21,Monthly,Bank Transfer,East,2,0,24.6,0
+1405,55,203.39,54,7,4,Annual,UPI,North,1,0,88.1,0
+1406,42,54.86,29,2,44,Monthly,Card,North,2,0,32.7,1
+1407,51,261.37,5,8,37,Annual,Card,North,1,1,15.7,0
+1408,34,173.97,4,1,9,Quarterly,Card,East,3,1,36.7,0
+1409,21,96.62,22,8,0,Monthly,UPI,East,1,0,87.8,1
+1410,43,279.56,53,1,20,Annual,Card,South,1,1,14.9,1
+1411,28,94.23,57,3,35,Monthly,Bank Transfer,East,4,1,93.6,1
+1412,21,143.4,51,7,33,Annual,Bank Transfer,North,1,0,17.9,1
+1413,33,124.53,16,3,27,Monthly,Bank Transfer,West,4,1,73.8,1
+1414,63,98.21,66,4,9,Quarterly,Card,West,4,0,16.0,0
+1415,52,166.08,42,2,19,Quarterly,Wallet,West,5,0,73.4,0
+1416,53,78.08,5,6,7,Monthly,Card,North,4,1,33.3,1
+1417,31,116.5,63,1,36,Monthly,Card,West,4,1,47.8,1
+1418,43,275.16,4,0,8,Annual,Card,North,3,1,77.9,0
+1419,47,30.3,31,4,37,Monthly,UPI,South,1,0,83.2,1
+1420,53,296.44,3,5,24,Annual,Card,West,5,1,34.0,0
+1421,63,24.28,56,3,31,Monthly,Bank Transfer,East,1,0,30.9,1
+1422,58,79.98,68,7,27,Monthly,Card,North,2,1,76.6,1
+1423,46,173.39,3,8,11,Monthly,Bank Transfer,South,5,1,24.2,1
+1424,48,344.07,67,3,23,Annual,UPI,North,4,0,26.6,0
+1425,61,98.47,21,4,43,Monthly,Card,East,5,0,41.5,1
+1426,48,33.61,21,4,8,Monthly,Wallet,South,1,1,76.1,1
+1427,24,131.62,9,6,23,Annual,Card,East,1,1,89.9,1
+1428,58,356.36,64,1,15,Annual,Wallet,East,5,0,74.6,0
+1429,34,94.54,57,6,16,Monthly,Card,East,5,0,49.1,0
+1430,30,54.62,3,0,42,Monthly,UPI,East,1,0,27.8,1
+1431,36,271.19,33,4,5,Annual,Card,West,2,1,23.9,1
+1432,23,122.57,61,6,21,Monthly,Card,West,4,0,79.2,1
+1433,50,105.2,57,2,0,Quarterly,UPI,South,4,0,61.5,0
+1434,29,185.79,58,7,8,Annual,UPI,East,3,0,66.9,0
+1435,57,114.19,12,7,12,Monthly,Wallet,South,3,0,9.5,1
+1436,21,301.18,64,1,14,Annual,Card,West,2,0,90.1,1
+1437,34,337.97,54,2,26,Annual,Card,South,2,0,31.1,1
+1438,21,96.54,28,6,45,Monthly,UPI,West,4,1,11.6,1
+1439,63,383.16,1,4,32,Annual,Bank Transfer,North,5,1,32.2,1
+1440,53,88.94,17,1,20,Monthly,Card,West,5,1,17.8,0
+1441,48,72.63,67,5,27,Monthly,UPI,East,2,1,71.3,1
+1442,33,150.7,61,4,10,Monthly,Card,North,4,1,15.4,1
+1443,28,278.09,45,1,13,Annual,UPI,North,3,0,80.1,0
+1444,21,66.95,10,3,31,Monthly,Bank Transfer,West,1,1,7.3,0
+1445,30,67.51,59,4,38,Monthly,Bank Transfer,West,1,1,92.3,0
+1446,57,79.82,42,0,4,Monthly,UPI,East,5,1,13.3,1
+1447,45,165.25,16,4,31,Annual,Card,South,4,1,86.3,1
+1448,45,101.86,12,6,23,Monthly,Bank Transfer,West,5,0,44.1,1
+1449,30,181.53,38,7,27,Annual,Bank Transfer,North,1,1,32.0,1
+1450,56,62.62,66,6,26,Monthly,Card,North,1,1,64.5,1
+1451,63,61.4,6,1,26,Monthly,UPI,West,3,1,57.8,0
+1452,32,21.2,14,6,34,Monthly,Card,East,1,0,40.5,1
+1453,52,47.68,51,4,5,Monthly,UPI,East,2,0,6.2,1
+1454,62,32.75,12,4,29,Monthly,UPI,South,2,1,43.0,1
+1455,49,142.67,7,5,0,Quarterly,Card,West,1,1,93.2,1
+1456,52,66.27,30,0,33,Monthly,UPI,West,1,1,56.9,1
+1457,62,108.6,21,4,12,Monthly,UPI,North,4,1,44.4,1
+1458,50,93.82,54,5,30,Monthly,Card,West,2,0,30.4,1
+1459,47,308.01,27,8,3,Annual,Bank Transfer,South,1,1,84.3,1
+1460,48,105.84,63,4,21,Monthly,Card,South,3,0,74.3,1
+1461,24,336.1,15,1,39,Annual,Card,West,5,0,79.1,1
+1462,39,373.08,13,2,41,Annual,UPI,West,3,1,78.7,0
+1463,51,87.44,35,5,45,Monthly,Bank Transfer,North,4,1,61.6,1
+1464,47,157.79,4,7,9,Annual,Wallet,East,1,0,12.6,0
+1465,62,111.51,54,6,43,Monthly,Bank Transfer,East,5,1,69.9,1
+1466,46,60.39,45,6,12,Monthly,Card,West,3,0,8.3,1
+1467,26,106.4,21,0,1,Monthly,Card,East,5,1,26.7,1
+1468,61,27.06,58,4,36,Monthly,Card,North,1,1,35.5,1
+1469,59,29.8,49,8,15,Monthly,Card,South,1,1,51.5,1
+1470,26,82.16,28,7,4,Monthly,UPI,West,3,1,57.9,1
+1471,52,158.84,19,8,8,Annual,Card,South,4,1,16.6,0
+1472,56,58.1,15,1,23,Monthly,Wallet,West,5,1,8.6,1
+1473,30,254.27,37,3,11,Annual,Card,East,4,0,16.0,0
+1474,45,64.17,18,8,40,Monthly,UPI,South,4,1,65.0,1
+1475,46,21.64,36,1,10,Monthly,Card,West,1,1,55.5,1
+1476,57,29.59,16,8,11,Monthly,UPI,North,1,1,75.8,1
+1477,46,104.93,44,6,11,Quarterly,Bank Transfer,North,4,0,82.4,1
+1478,37,213.65,22,0,39,Annual,Card,West,3,0,7.4,1
+1479,28,59.12,64,8,32,Monthly,Card,South,4,0,29.2,0
+1480,22,72.6,32,8,41,Monthly,Wallet,North,2,1,56.1,1
+1481,31,144.51,72,7,2,Annual,Bank Transfer,West,1,1,91.5,1
+1482,37,210.92,28,8,18,Annual,Card,East,1,0,71.5,0
+1483,38,263.12,44,4,45,Annual,Card,East,4,1,27.1,0
+1484,62,284.16,2,2,26,Annual,Bank Transfer,North,5,1,73.6,0
+1485,63,104.26,46,6,11,Monthly,Card,West,1,0,46.6,0
+1486,43,114.07,29,3,31,Monthly,UPI,East,3,0,30.3,1
+1487,38,178.05,23,1,37,Quarterly,Bank Transfer,South,2,0,16.5,0
+1488,22,228.79,72,7,0,Annual,UPI,East,4,0,81.8,0
+1489,54,374.47,7,4,26,Annual,UPI,South,5,1,33.5,1
+1490,65,54.85,26,2,21,Monthly,Card,South,3,0,61.3,1
+1491,37,88.6,7,5,33,Monthly,Bank Transfer,East,2,0,74.8,1
+1492,23,45.82,17,0,28,Monthly,UPI,North,1,1,60.0,1
+1493,60,250.18,59,6,29,Annual,Card,North,4,0,35.6,1
+1494,59,155.5,17,8,16,Annual,Bank Transfer,South,3,1,48.3,0
+1495,53,277.73,70,2,9,Annual,UPI,East,4,1,59.3,1
+1496,56,275.2,26,3,4,Annual,Card,South,3,0,65.1,0
+1497,60,93.56,59,0,31,Monthly,Card,North,2,0,62.5,0
+1498,45,69.85,47,0,4,Monthly,Card,North,3,0,54.9,0
+1499,33,52.98,23,5,35,Monthly,Card,East,2,0,22.6,1
+1500,28,37.91,31,5,23,Monthly,Card,West,2,1,84.1,1
+1501,44,59.74,6,3,34,Monthly,Card,South,3,0,34.5,0
+1502,34,253.92,22,8,24,Annual,UPI,North,5,1,49.9,1
+1503,38,223.36,27,3,12,Quarterly,Bank Transfer,North,4,0,40.6,0
+1504,29,331.62,30,0,29,Annual,Card,East,5,1,43.3,1
+1505,35,118.0,38,8,32,Monthly,Card,North,5,0,75.7,1
+1506,42,79.14,25,2,45,Monthly,UPI,East,5,1,5.8,1
+1507,62,83.25,51,3,14,Monthly,UPI,South,2,1,26.0,1
+1508,33,84.63,27,7,28,Monthly,Wallet,West,5,0,38.7,0
+1509,42,102.51,69,4,20,Monthly,Card,West,5,0,56.1,0
+1510,59,197.97,27,6,4,Quarterly,Card,West,5,1,22.0,1
+1511,56,32.23,4,2,12,Monthly,UPI,West,1,1,30.5,1
+1512,47,86.69,69,6,30,Monthly,Wallet,South,1,1,91.0,1
+1513,59,166.15,65,7,17,Quarterly,Card,South,2,0,94.2,0
+1514,52,117.97,37,7,22,Monthly,Bank Transfer,North,3,1,60.2,1
+1515,63,55.56,6,3,10,Monthly,Bank Transfer,West,3,1,65.0,1
+1516,28,181.25,65,5,26,Annual,Card,North,4,0,27.7,1
+1517,46,141.88,33,1,45,Annual,Card,North,2,1,65.3,1
+1518,51,324.66,3,1,11,Annual,UPI,South,3,0,53.1,1
+1519,34,185.6,57,0,40,Annual,UPI,South,5,0,40.2,0
+1520,44,176.62,54,0,0,Annual,Card,North,3,0,66.2,0
+1521,23,60.36,42,8,40,Monthly,Card,East,2,0,89.1,1
+1522,62,107.8,29,1,42,Monthly,Card,West,3,1,9.0,1
+1523,57,90.64,50,2,21,Monthly,Wallet,East,2,1,93.0,1
+1524,35,50.08,30,0,39,Monthly,UPI,North,1,1,26.3,1
+1525,45,114.79,43,2,17,Monthly,Card,West,3,0,51.9,1
+1526,36,33.09,29,6,33,Monthly,Card,South,3,0,44.8,1
+1527,34,100.94,31,8,5,Monthly,Card,South,4,1,33.0,1
+1528,61,74.99,11,5,25,Monthly,UPI,West,4,0,47.4,1
+1529,45,52.37,69,2,35,Monthly,Card,East,2,1,39.2,1
+1530,33,139.39,65,5,31,Monthly,Card,North,4,1,89.6,1
+1531,23,223.84,25,6,16,Annual,Card,South,3,1,62.1,0
+1532,44,141.3,34,7,43,Quarterly,UPI,South,2,1,27.3,1
+1533,45,50.7,67,3,27,Monthly,Bank Transfer,North,2,1,27.8,1
+1534,26,76.18,19,4,13,Monthly,Bank Transfer,East,4,1,5.6,1
+1535,39,188.14,24,2,12,Annual,Card,East,4,0,50.2,0
+1536,33,66.95,57,1,40,Monthly,Wallet,West,2,0,31.4,1
+1537,27,111.85,6,1,13,Monthly,Card,North,5,0,38.8,1
+1538,42,103.62,31,5,42,Monthly,UPI,East,4,1,60.0,1
+1539,29,149.28,32,5,28,Monthly,Card,East,5,1,51.3,1
+1540,23,286.28,30,7,25,Annual,UPI,West,5,0,36.4,1
+1541,45,60.81,67,8,2,Monthly,Card,South,2,1,76.7,1
+1542,28,84.42,28,2,42,Monthly,Bank Transfer,South,1,0,44.1,1
+1543,37,142.97,18,8,40,Quarterly,Wallet,North,4,0,76.6,1
+1544,45,145.36,30,3,16,Quarterly,UPI,West,1,1,12.9,1
+1545,41,262.15,40,0,37,Annual,Bank Transfer,North,5,0,81.2,0
+1546,59,109.52,69,7,20,Quarterly,Card,North,2,1,80.3,0
+1547,65,101.26,36,7,40,Monthly,Card,North,2,1,31.2,0
+1548,35,363.65,63,6,19,Annual,Card,South,2,0,54.3,0
+1549,39,105.22,13,2,20,Monthly,Wallet,West,5,0,81.5,1
+1550,30,108.44,2,5,36,Monthly,UPI,South,1,0,38.9,1
+1551,24,99.36,56,2,40,Monthly,Bank Transfer,East,4,0,8.1,1
+1552,65,317.93,60,6,17,Annual,UPI,North,4,1,6.0,0
+1553,57,74.1,24,6,30,Monthly,UPI,North,4,1,56.4,1
+1554,22,109.29,9,8,37,Monthly,UPI,West,5,0,72.8,1
+1555,49,264.06,27,2,5,Annual,Card,South,5,1,81.6,0
+1556,63,110.91,69,7,8,Monthly,Card,East,5,1,67.6,1
+1557,23,94.36,28,2,38,Monthly,Card,East,5,0,58.3,1
+1558,31,59.39,55,2,34,Monthly,Card,East,2,0,61.7,1
+1559,53,73.2,41,6,24,Quarterly,Card,South,1,0,12.0,1
+1560,42,206.56,36,0,6,Annual,Card,South,4,0,39.1,0
+1561,52,105.19,71,4,38,Monthly,Card,East,1,0,20.4,1
+1562,59,255.95,34,0,43,Annual,Card,South,5,0,64.2,1
+1563,36,217.55,24,7,22,Quarterly,Card,West,4,1,29.8,0
+1564,40,27.61,11,1,15,Monthly,Card,North,1,0,56.8,0
+1565,64,136.03,64,8,43,Monthly,UPI,West,5,0,41.5,1
+1566,36,216.72,58,2,43,Annual,UPI,North,5,0,20.7,1
+1567,28,88.66,38,4,30,Monthly,UPI,North,3,1,24.2,1
+1568,23,342.79,8,5,0,Annual,UPI,West,5,1,34.6,1
+1569,52,42.51,53,1,31,Monthly,Bank Transfer,South,1,0,74.3,1
+1570,38,109.4,21,2,22,Monthly,Card,West,4,0,37.3,1
+1571,23,129.73,35,1,26,Monthly,Card,West,4,1,77.0,0
+1572,45,119.68,17,2,22,Monthly,Wallet,North,5,0,74.1,1
+1573,39,44.68,32,2,32,Monthly,Card,West,2,0,30.3,1
+1574,27,153.63,25,2,14,Annual,Bank Transfer,South,1,0,41.1,0
+1575,45,101.26,29,5,27,Monthly,Card,South,4,0,50.9,1
+1576,41,194.38,7,5,13,Annual,Card,North,3,1,30.2,1
+1577,63,53.88,43,5,23,Monthly,Bank Transfer,South,5,1,26.4,1
+1578,23,147.66,25,7,6,Quarterly,Wallet,South,1,1,32.1,1
+1579,37,226.1,47,7,40,Annual,UPI,East,1,1,11.1,0
+1580,29,126.82,25,6,31,Monthly,Wallet,North,5,0,19.9,1
+1581,31,166.03,66,7,32,Quarterly,Bank Transfer,North,5,1,32.3,1
+1582,23,110.97,18,4,3,Quarterly,Wallet,East,2,0,53.1,0
+1583,56,92.15,42,0,40,Monthly,Card,East,1,1,24.7,0
+1584,58,67.52,33,8,13,Monthly,UPI,West,4,0,34.2,0
+1585,48,67.5,64,2,29,Monthly,Wallet,North,2,0,22.0,1
+1586,46,180.07,10,6,15,Quarterly,Card,South,4,1,14.0,1
+1587,21,155.08,17,3,5,Annual,Bank Transfer,North,3,0,89.5,0
+1588,26,79.0,21,4,21,Monthly,Bank Transfer,West,4,0,26.9,1
+1589,27,55.51,1,3,1,Monthly,UPI,South,2,1,39.7,1
+1590,28,98.78,14,4,22,Monthly,Wallet,South,1,1,15.7,1
+1591,59,110.53,37,5,6,Monthly,Card,East,3,1,64.6,0
+1592,30,140.8,50,7,30,Annual,Card,South,1,0,57.0,1
+1593,41,74.7,43,2,41,Monthly,Bank Transfer,West,2,1,42.7,1
+1594,47,21.54,12,3,23,Monthly,UPI,South,1,0,94.5,1
+1595,29,82.62,32,3,14,Monthly,Card,West,1,0,15.6,1
+1596,27,175.74,4,2,23,Quarterly,Card,South,2,0,27.1,1
+1597,54,133.01,44,7,41,Quarterly,Card,West,1,1,15.0,1
+1598,48,78.54,65,4,45,Quarterly,UPI,East,2,1,88.8,1
+1599,24,103.82,60,7,20,Monthly,Card,North,4,1,19.8,1
+1600,42,28.74,9,3,38,Monthly,Card,North,1,1,21.9,1
+1601,51,98.57,2,5,18,Monthly,Card,East,4,0,33.3,0
+1602,53,51.98,4,6,30,Monthly,UPI,South,5,0,31.1,1
+1603,64,168.31,65,8,38,Quarterly,UPI,South,5,1,45.3,0
+1604,64,47.86,20,7,6,Monthly,Card,North,1,0,74.0,1
+1605,31,345.05,47,5,5,Annual,Card,East,1,0,69.0,0
+1606,28,209.82,37,6,26,Annual,Bank Transfer,East,5,0,44.7,1
+1607,64,43.84,32,8,0,Monthly,Wallet,North,2,0,31.2,1
+1608,50,29.63,14,1,11,Monthly,Bank Transfer,West,1,1,74.1,1
+1609,51,113.38,61,2,40,Monthly,Bank Transfer,South,2,1,56.1,0
+1610,34,55.33,35,4,40,Monthly,UPI,West,2,0,17.8,1
+1611,37,75.08,44,4,10,Monthly,Card,West,2,1,89.8,0
+1612,57,71.14,10,2,20,Monthly,Card,South,3,0,18.5,1
+1613,54,215.76,58,1,2,Annual,Wallet,South,2,0,42.8,0
+1614,57,250.34,3,4,19,Annual,Card,East,5,0,67.9,1
+1615,42,96.09,48,2,35,Monthly,Card,West,5,0,53.8,1
+1616,27,174.58,12,0,39,Annual,UPI,North,4,0,49.7,1
+1617,39,234.76,71,6,7,Annual,Card,West,2,1,90.5,0
+1618,46,120.78,65,4,17,Monthly,Card,South,3,1,80.5,1
+1619,30,222.09,43,2,36,Annual,UPI,East,4,0,55.0,1
+1620,61,141.1,41,8,10,Monthly,UPI,West,4,0,14.0,1
+1621,37,247.52,27,1,5,Annual,Card,East,1,1,6.0,0
+1622,22,309.67,46,2,15,Annual,Card,West,2,1,22.4,1
+1623,26,137.8,15,7,38,Annual,Bank Transfer,North,1,0,17.8,1
+1624,27,87.51,63,1,13,Monthly,Card,North,4,1,85.1,0
+1625,61,185.2,45,7,39,Quarterly,Card,East,5,0,19.3,1
+1626,30,123.79,4,5,8,Monthly,Card,South,2,0,70.5,1
+1627,39,105.64,66,6,12,Monthly,UPI,West,3,0,22.8,1
+1628,31,262.45,56,7,27,Annual,Wallet,West,5,1,78.4,0
+1629,25,49.77,53,4,38,Monthly,UPI,East,5,1,40.8,1
+1630,44,65.39,2,5,44,Monthly,UPI,North,1,1,24.2,1
+1631,34,112.57,54,6,20,Monthly,Card,North,3,0,22.7,1
+1632,41,233.91,37,0,41,Quarterly,Card,North,5,0,87.0,1
+1633,62,91.07,39,4,20,Monthly,Bank Transfer,West,3,1,12.2,1
+1634,62,286.58,14,0,14,Annual,Card,East,1,0,17.5,0
+1635,44,260.93,7,4,2,Annual,Bank Transfer,North,1,0,90.2,1
+1636,29,140.66,19,6,40,Quarterly,Card,East,4,0,52.0,1
+1637,26,75.47,46,8,15,Monthly,Card,North,2,0,11.8,1
+1638,42,57.44,40,7,41,Monthly,Bank Transfer,East,2,0,87.3,1
+1639,33,100.47,14,2,29,Monthly,Card,East,1,0,26.7,1
+1640,56,98.82,51,8,27,Monthly,Card,South,5,1,9.8,1
+1641,46,39.76,67,6,6,Monthly,Card,West,1,0,91.3,1
+1642,35,275.74,51,6,6,Annual,UPI,West,2,1,49.6,1
+1643,32,78.54,40,3,10,Monthly,UPI,West,3,0,20.0,1
+1644,37,118.22,46,7,37,Annual,Card,North,1,1,83.6,1
+1645,53,134.48,13,4,21,Monthly,Card,North,4,1,71.1,1
+1646,42,384.93,15,4,43,Annual,UPI,West,5,0,18.3,1
+1647,65,214.48,25,6,40,Annual,Card,North,1,1,83.9,1
+1648,64,24.56,36,4,12,Monthly,Card,West,1,1,80.1,1
+1649,21,60.73,20,8,18,Monthly,UPI,West,5,0,32.3,1
+1650,24,88.81,1,0,16,Monthly,Card,East,2,1,84.1,1
+1651,30,253.3,38,3,2,Annual,Card,North,4,1,27.4,0
+1652,59,51.68,18,3,16,Monthly,Bank Transfer,East,2,1,54.9,1
+1653,48,101.46,65,5,29,Monthly,Bank Transfer,East,3,1,47.0,1
+1654,29,106.66,66,5,8,Quarterly,Card,South,5,1,9.8,1
+1655,24,133.2,43,1,18,Monthly,Card,North,5,1,67.2,0
+1656,54,93.72,18,3,43,Monthly,UPI,West,2,1,61.5,1
+1657,30,96.31,32,3,6,Quarterly,Card,North,4,0,79.9,0
+1658,55,87.01,16,6,9,Monthly,Bank Transfer,West,1,0,17.8,1
+1659,39,92.91,48,4,25,Quarterly,Wallet,West,4,0,46.8,1
+1660,23,131.06,6,5,8,Quarterly,UPI,West,4,1,29.9,1
+1661,45,88.24,46,5,29,Monthly,Card,South,2,1,75.6,0
+1662,59,124.93,17,5,37,Quarterly,Bank Transfer,East,5,1,57.6,1
+1663,52,168.11,31,1,11,Annual,Bank Transfer,South,4,1,88.0,0
+1664,61,187.48,14,7,24,Annual,Wallet,East,2,0,22.6,1
+1665,33,56.7,27,0,8,Monthly,Card,North,1,1,74.7,0
+1666,54,110.2,65,5,22,Monthly,UPI,West,5,0,77.1,1
+1667,27,25.18,3,3,18,Monthly,Card,East,3,1,68.3,0
+1668,60,74.42,70,1,37,Monthly,Card,North,4,1,63.8,1
+1669,42,365.23,31,7,4,Annual,UPI,North,5,0,36.1,0
+1670,29,125.66,64,8,14,Monthly,Card,North,3,1,48.0,0
+1671,33,76.35,71,7,3,Monthly,UPI,North,4,1,67.6,0
+1672,44,137.9,31,3,5,Monthly,Card,North,5,0,25.4,1
+1673,36,179.03,57,2,18,Annual,Card,South,1,1,36.5,1
+1674,25,120.61,64,5,14,Monthly,Wallet,South,4,1,89.7,1
+1675,53,71.98,63,4,5,Monthly,Card,West,2,0,80.7,0
+1676,23,129.51,15,0,31,Annual,UPI,West,1,1,30.0,1
+1677,45,78.23,49,2,42,Monthly,Card,South,4,0,64.4,1
+1678,37,186.11,44,6,27,Annual,Bank Transfer,North,1,0,54.8,1
+1679,57,171.1,60,3,8,Annual,Card,West,1,1,77.0,0
+1680,60,106.41,2,1,19,Monthly,Card,East,5,1,80.2,1
+1681,61,322.16,11,4,39,Annual,Card,North,5,1,90.8,1
+1682,32,97.45,30,1,41,Monthly,Bank Transfer,North,1,0,66.6,1
+1683,37,134.87,70,0,38,Annual,Card,East,2,1,14.8,0
+1684,64,124.85,19,0,20,Monthly,Bank Transfer,East,5,1,35.1,1
+1685,23,64.39,14,3,20,Monthly,Card,North,5,1,89.6,1
+1686,25,151.01,69,1,33,Annual,Wallet,West,1,1,64.3,1
+1687,44,92.09,31,7,26,Monthly,Card,North,3,0,36.7,1
+1688,57,238.78,53,2,38,Annual,Wallet,South,3,1,35.7,0
+1689,33,233.82,22,1,26,Annual,UPI,North,3,1,71.9,1
+1690,54,378.84,17,6,44,Annual,Wallet,East,5,0,69.1,0
+1691,23,111.27,53,7,27,Monthly,Wallet,West,3,1,68.0,1
+1692,21,94.61,49,5,28,Quarterly,Card,West,2,1,90.0,1
+1693,48,84.88,19,0,13,Monthly,Card,South,4,1,56.8,1
+1694,31,65.78,30,4,9,Monthly,Wallet,North,1,0,54.7,1
+1695,33,75.15,48,3,18,Monthly,UPI,North,5,1,70.9,0
+1696,49,130.74,18,4,42,Annual,Bank Transfer,North,1,1,77.3,1
+1697,53,226.91,5,6,6,Quarterly,Card,East,5,1,22.1,1
+1698,58,102.93,34,7,9,Monthly,Wallet,South,4,0,71.0,0
+1699,21,66.16,23,0,26,Monthly,Bank Transfer,South,3,1,61.8,0
+1700,39,187.88,46,8,30,Quarterly,Bank Transfer,West,3,0,24.7,1
+1701,48,93.55,15,5,44,Monthly,Bank Transfer,East,4,0,74.6,1
+1702,53,92.36,8,8,20,Monthly,UPI,West,3,1,42.0,1
+1703,61,262.48,29,2,34,Annual,Card,West,2,0,90.3,0
+1704,26,243.21,71,1,41,Annual,Card,East,1,0,37.6,0
+1705,44,104.87,2,0,1,Monthly,Card,South,5,0,50.1,0
+1706,23,84.99,52,2,17,Monthly,Card,West,1,0,11.7,1
+1707,30,99.69,25,4,20,Monthly,Bank Transfer,West,4,0,32.2,1
+1708,35,214.61,37,8,32,Annual,Bank Transfer,West,2,1,6.5,1
+1709,22,75.51,62,1,41,Monthly,Card,East,3,1,17.9,1
+1710,26,121.0,67,3,3,Monthly,Bank Transfer,West,4,1,42.1,0
+1711,38,128.06,70,7,20,Quarterly,UPI,West,2,1,46.5,1
+1712,25,35.05,67,1,10,Monthly,UPI,South,2,1,83.3,1
+1713,56,72.58,56,4,43,Monthly,Card,North,3,1,60.4,1
+1714,44,71.02,27,5,8,Monthly,Card,West,2,1,5.9,1
+1715,65,89.1,8,7,38,Monthly,Bank Transfer,North,2,0,36.5,1
+1716,48,98.56,33,8,34,Quarterly,Card,West,2,0,58.3,1
+1717,62,153.69,61,3,10,Annual,Card,East,1,0,94.0,1
+1718,24,91.53,61,5,19,Monthly,UPI,West,5,0,26.7,1
+1719,26,283.4,36,2,27,Annual,UPI,South,5,1,49.1,1
+1720,44,164.52,55,3,39,Annual,UPI,East,5,0,39.4,1
+1721,40,107.7,65,0,38,Monthly,Wallet,East,3,0,63.2,1
+1722,57,201.78,59,7,11,Annual,UPI,West,4,0,8.4,1
+1723,47,179.74,8,5,6,Annual,Card,West,5,1,93.5,1
+1724,31,332.86,67,0,42,Annual,Bank Transfer,East,4,1,80.4,1
+1725,49,96.45,23,0,19,Monthly,Bank Transfer,West,3,1,15.6,0
+1726,32,326.7,22,0,13,Annual,Card,North,3,1,12.3,1
+1727,29,168.39,23,4,8,Monthly,Card,East,5,1,42.3,1
+1728,26,92.56,67,7,40,Monthly,Bank Transfer,East,2,0,90.5,1
+1729,64,283.75,12,8,13,Annual,Card,East,3,0,47.1,0
+1730,44,112.76,42,1,40,Quarterly,UPI,North,3,0,19.3,1
+1731,55,63.69,56,6,30,Monthly,Card,West,2,1,70.1,1
+1732,53,125.29,52,0,10,Monthly,Card,East,5,0,88.0,0
+1733,29,144.89,12,4,9,Quarterly,UPI,North,3,1,40.6,1
+1734,34,117.93,72,5,0,Monthly,UPI,South,4,0,36.0,0
+1735,36,210.67,41,2,25,Annual,Card,South,3,1,78.8,0
+1736,58,98.35,31,5,23,Monthly,UPI,South,3,0,60.0,1
+1737,48,68.19,55,2,18,Monthly,Card,South,3,1,65.8,1
+1738,27,93.2,52,0,10,Monthly,Card,North,3,0,56.7,0
+1739,40,126.21,58,8,23,Monthly,UPI,North,4,1,81.0,0
+1740,26,59.52,26,8,39,Monthly,Card,East,4,1,9.4,1
+1741,37,58.49,70,4,11,Monthly,UPI,North,3,1,42.5,1
+1742,46,93.2,17,2,40,Monthly,Card,North,4,1,85.3,0
+1743,54,132.4,48,0,9,Quarterly,Card,East,5,0,39.4,1
+1744,37,359.13,56,1,12,Annual,UPI,North,5,1,94.5,0
+1745,34,206.27,36,8,42,Annual,Card,South,1,1,86.9,1
+1746,38,67.55,13,3,14,Monthly,UPI,East,1,1,24.9,1
+1747,55,101.6,44,5,20,Monthly,Wallet,North,3,1,18.7,1
+1748,63,223.54,72,5,5,Annual,Wallet,West,2,1,32.4,0
+1749,57,31.66,37,8,31,Monthly,Wallet,North,2,1,87.9,0
+1750,57,48.46,71,6,22,Monthly,UPI,West,2,1,86.0,1
+1751,61,75.24,29,6,31,Monthly,Bank Transfer,West,4,1,79.4,1
+1752,50,136.57,50,6,26,Quarterly,UPI,North,4,0,62.3,0
+1753,22,121.44,12,5,1,Monthly,Card,West,5,1,54.7,1
+1754,33,86.75,27,7,29,Monthly,Card,North,2,1,94.1,1
+1755,31,68.27,1,0,43,Monthly,UPI,North,4,1,82.6,1
+1756,62,300.27,62,0,18,Annual,UPI,West,4,0,37.7,1
+1757,37,170.17,22,5,26,Annual,Bank Transfer,North,3,0,87.2,0
+1758,52,172.88,38,7,21,Annual,UPI,East,4,1,56.1,1
+1759,44,307.18,40,7,45,Annual,Card,South,4,1,18.9,1
+1760,34,220.1,34,5,32,Quarterly,Card,North,5,1,47.9,1
+1761,45,205.96,68,7,11,Annual,Bank Transfer,South,4,1,6.3,0
+1762,28,66.81,2,8,14,Quarterly,Card,West,2,1,64.8,1
+1763,55,312.79,58,8,15,Annual,Wallet,North,2,1,76.8,1
+1764,59,51.3,9,2,33,Monthly,Card,South,3,0,23.7,1
+1765,61,47.0,11,7,12,Monthly,Bank Transfer,West,1,0,58.8,1
+1766,62,106.69,1,4,26,Monthly,UPI,West,5,1,49.3,1
+1767,36,120.04,57,1,11,Monthly,UPI,East,4,0,33.7,1
+1768,49,46.98,25,1,14,Monthly,UPI,South,2,1,50.2,1
+1769,30,119.06,22,2,39,Monthly,Card,West,2,1,91.1,0
+1770,51,240.6,19,4,21,Annual,UPI,East,3,1,45.5,0
+1771,43,170.17,36,0,45,Quarterly,Card,West,2,0,64.6,0
+1772,33,247.58,36,1,4,Annual,Bank Transfer,West,2,0,34.3,0
+1773,65,332.43,36,6,3,Annual,UPI,South,1,0,62.6,0
+1774,41,284.42,20,4,36,Annual,UPI,South,2,0,44.4,0
+1775,29,285.51,47,7,13,Annual,Card,East,2,1,47.1,0
+1776,22,80.29,51,7,3,Monthly,Bank Transfer,West,5,0,87.2,0
+1777,55,96.17,10,1,35,Monthly,Bank Transfer,North,1,0,76.9,1
+1778,64,101.2,20,5,4,Monthly,Card,West,2,1,45.9,1
+1779,60,283.14,42,6,9,Annual,Card,South,3,0,57.6,0
+1780,57,68.61,40,2,6,Monthly,UPI,South,1,0,75.2,1
+1781,40,118.13,28,5,1,Monthly,Wallet,South,2,1,16.1,1
+1782,49,75.24,16,1,11,Monthly,Card,West,5,0,19.7,1
+1783,34,334.48,62,4,32,Annual,UPI,East,1,1,6.5,1
+1784,25,105.08,30,1,41,Monthly,UPI,East,4,1,6.4,1
+1785,21,61.71,5,0,38,Monthly,Card,West,2,1,38.5,1
+1786,63,54.73,21,0,31,Monthly,UPI,North,2,1,41.3,1
+1787,51,100.54,6,8,24,Monthly,UPI,West,5,0,19.2,1
+1788,47,298.45,1,4,30,Annual,Bank Transfer,South,4,1,16.5,0
+1789,57,45.41,19,3,42,Monthly,Card,South,1,0,69.6,1
+1790,50,83.2,17,5,27,Quarterly,Bank Transfer,East,3,0,57.1,1
+1791,32,43.07,21,6,20,Monthly,Bank Transfer,South,1,1,48.5,1
+1792,60,89.99,66,5,21,Monthly,Card,East,2,1,35.7,1
+1793,37,31.85,70,2,6,Monthly,Card,North,2,1,79.7,1
+1794,26,257.14,51,8,12,Annual,Wallet,South,2,0,74.8,0
+1795,24,190.86,68,2,23,Annual,Card,South,2,0,66.2,0
+1796,60,68.88,52,4,24,Monthly,Card,North,5,1,85.4,1
+1797,40,83.71,8,6,8,Monthly,UPI,North,2,1,79.0,1
+1798,46,173.12,10,3,17,Quarterly,Card,East,2,1,16.1,0
+1799,21,175.29,61,3,42,Quarterly,Bank Transfer,North,4,1,79.0,0
+1800,38,321.72,15,7,27,Annual,Card,East,5,0,83.9,0
+1801,59,183.45,64,6,26,Annual,UPI,South,1,0,82.9,1
+1802,37,344.75,63,3,37,Annual,Card,North,4,0,58.2,0
+1803,45,103.28,6,1,37,Quarterly,UPI,West,1,0,15.6,1
+1804,23,60.17,67,0,25,Monthly,UPI,West,4,0,24.4,1
+1805,50,313.97,46,3,17,Annual,Card,East,4,0,34.2,0
+1806,62,117.45,23,7,5,Monthly,Card,East,3,1,60.5,1
+1807,61,74.79,49,3,16,Monthly,Bank Transfer,South,4,1,35.3,1
+1808,40,351.33,72,8,11,Annual,UPI,East,4,0,22.9,0
+1809,55,62.78,14,4,39,Monthly,Card,West,5,0,34.1,1
+1810,35,278.06,29,7,41,Annual,Wallet,South,2,0,6.1,1
+1811,57,74.18,50,4,45,Monthly,Card,West,3,1,43.8,1
+1812,41,196.96,69,2,6,Annual,Wallet,South,5,1,53.2,0
+1813,35,152.19,59,7,31,Monthly,Bank Transfer,North,5,1,10.8,1
+1814,30,139.77,33,0,45,Monthly,Card,East,5,1,43.8,1
+1815,40,147.26,19,8,43,Monthly,Bank Transfer,West,5,1,82.6,1
+1816,25,38.95,32,2,11,Monthly,UPI,South,1,1,70.6,0
+1817,45,139.61,24,1,19,Quarterly,Card,East,3,0,68.7,0
+1818,61,102.85,68,4,1,Monthly,Bank Transfer,North,5,0,93.4,1
+1819,45,103.92,9,2,12,Monthly,UPI,East,5,1,21.4,1
+1820,49,147.67,65,2,28,Annual,UPI,South,1,0,89.2,1
+1821,64,110.68,64,3,38,Monthly,Bank Transfer,North,2,1,89.4,1
+1822,42,132.96,25,6,2,Monthly,Card,West,3,0,87.5,1
+1823,54,58.62,70,3,18,Monthly,UPI,West,3,0,45.3,1
+1824,27,28.03,40,7,18,Monthly,Bank Transfer,West,1,0,21.9,1
+1825,24,151.32,50,3,22,Monthly,Card,East,5,0,79.1,1
+1826,23,327.62,29,5,4,Annual,Card,South,2,1,23.6,0
+1827,21,302.25,23,6,14,Annual,UPI,East,3,1,9.0,0
+1828,61,130.56,53,0,26,Monthly,Wallet,East,4,1,30.0,1
+1829,65,298.17,10,1,7,Annual,Card,South,2,1,11.0,0
+1830,39,75.79,14,1,25,Monthly,Card,East,2,0,54.9,1
+1831,45,68.24,31,6,39,Monthly,UPI,North,3,1,71.5,1
+1832,41,91.07,44,4,11,Monthly,Card,South,3,1,23.1,1
+1833,33,84.14,57,1,15,Monthly,UPI,North,5,1,55.1,1
+1834,60,209.13,48,0,9,Annual,UPI,East,1,0,5.5,0
+1835,23,162.57,50,4,43,Quarterly,Card,West,5,1,45.5,1
+1836,30,112.2,19,4,40,Monthly,UPI,South,2,1,94.9,1
+1837,55,242.19,46,3,25,Annual,Wallet,South,4,1,46.5,1
+1838,54,88.65,25,5,29,Monthly,Card,South,5,1,38.7,0
+1839,60,97.33,71,2,42,Monthly,Card,East,4,1,21.2,1
+1840,57,249.31,20,6,20,Annual,Bank Transfer,South,4,0,83.1,0
+1841,23,97.6,3,0,3,Quarterly,UPI,North,3,0,33.2,1
+1842,41,175.69,44,2,18,Quarterly,UPI,West,3,0,77.2,0
+1843,56,164.76,32,1,42,Quarterly,Bank Transfer,East,2,1,13.7,1
+1844,44,151.12,58,0,31,Annual,Bank Transfer,South,5,1,84.7,1
+1845,30,87.74,42,4,45,Monthly,Wallet,South,1,1,59.3,0
+1846,33,43.68,63,5,10,Monthly,Wallet,North,1,0,68.0,1
+1847,63,98.74,2,0,19,Monthly,Bank Transfer,South,4,0,86.4,0
+1848,48,139.04,34,8,12,Monthly,Card,East,4,1,29.0,1
+1849,28,98.46,32,1,11,Monthly,Card,North,3,0,18.9,0
+1850,60,37.96,43,1,39,Monthly,Bank Transfer,West,1,0,68.4,1
+1851,64,62.41,50,5,40,Monthly,Card,North,5,0,47.8,1
+1852,24,91.72,23,3,16,Monthly,Bank Transfer,North,2,0,68.0,1
+1853,61,323.72,65,4,13,Annual,Card,West,4,1,79.2,0
+1854,25,136.34,56,1,43,Monthly,Bank Transfer,North,4,0,92.9,1
+1855,25,135.05,58,5,30,Quarterly,UPI,East,3,1,32.0,1
+1856,47,71.1,60,7,28,Monthly,Bank Transfer,West,2,0,71.4,0
+1857,30,33.49,20,2,13,Monthly,Card,South,1,0,40.2,0
+1858,56,69.54,56,6,10,Monthly,Card,West,4,0,36.8,1
+1859,52,206.2,40,2,21,Annual,Card,North,3,1,60.0,1
+1860,57,275.93,48,6,15,Annual,Card,West,2,1,66.9,1
+1861,42,207.9,17,5,40,Quarterly,Card,South,5,0,68.7,1
+1862,27,93.64,11,8,31,Monthly,Card,East,4,1,11.0,1
+1863,51,57.48,46,7,35,Monthly,Bank Transfer,East,2,1,91.1,1
+1864,59,173.1,25,8,32,Quarterly,Card,North,3,0,76.2,1
+1865,62,96.0,60,2,28,Quarterly,Card,East,4,0,58.4,1
+1866,31,190.82,16,0,20,Quarterly,Card,North,5,1,38.2,1
+1867,41,76.79,42,0,32,Quarterly,UPI,East,1,0,49.7,1
+1868,44,206.61,44,1,31,Annual,Card,West,4,0,52.2,0
+1869,28,156.64,31,0,41,Annual,UPI,South,5,0,9.7,1
+1870,29,121.81,3,8,18,Monthly,Card,West,4,0,65.3,1
+1871,21,114.82,66,2,25,Monthly,Card,East,2,0,53.3,1
+1872,33,269.86,42,4,25,Annual,Card,South,1,1,45.6,1
+1873,45,263.13,26,4,44,Annual,UPI,South,2,1,37.5,1
+1874,40,93.52,27,7,24,Monthly,UPI,East,3,1,93.6,0
+1875,36,62.15,4,0,0,Monthly,Card,North,3,0,32.3,1
+1876,48,324.09,54,0,19,Annual,Card,East,1,0,32.2,0
+1877,64,182.82,23,0,7,Annual,UPI,West,1,0,46.0,1
+1878,65,107.77,4,0,31,Monthly,Card,West,4,1,42.1,1
+1879,39,257.84,4,4,12,Annual,Card,East,2,1,77.9,0
+1880,35,349.08,47,1,38,Annual,UPI,East,3,1,78.9,1
+1881,61,105.9,48,7,22,Monthly,Card,West,3,0,78.3,1
+1882,29,111.45,58,8,43,Monthly,Card,West,2,0,35.9,1
+1883,57,71.79,51,1,26,Monthly,UPI,South,1,0,51.8,1
+1884,42,108.0,71,6,33,Monthly,Card,East,4,0,56.9,1
+1885,65,196.21,65,1,31,Annual,Card,North,2,0,67.5,0
+1886,33,105.59,27,2,43,Monthly,Card,North,1,0,27.8,1
+1887,45,78.41,6,7,2,Monthly,Card,West,4,1,36.6,1
+1888,58,115.45,4,6,2,Quarterly,Card,West,4,0,47.7,1
+1889,42,71.98,42,4,35,Monthly,Wallet,North,4,0,60.2,1
+1890,25,87.27,69,0,16,Monthly,Bank Transfer,West,5,0,67.8,1
+1891,28,147.87,26,7,31,Quarterly,Wallet,North,2,0,39.9,1
+1892,64,136.77,15,1,10,Quarterly,Bank Transfer,West,2,0,71.6,1
+1893,54,212.04,54,7,2,Annual,Card,North,3,1,55.2,0
+1894,36,235.75,4,2,5,Annual,UPI,North,5,0,64.8,0
+1895,32,111.04,30,3,9,Quarterly,Card,North,3,0,72.2,1
+1896,54,75.45,41,3,30,Monthly,UPI,South,2,0,64.8,0
+1897,25,87.81,9,7,32,Monthly,Card,South,1,0,27.2,1
+1898,48,103.23,4,3,42,Monthly,Card,West,3,1,45.5,1
+1899,47,122.43,31,8,18,Quarterly,UPI,South,4,0,43.9,0
+1900,44,87.17,39,8,38,Monthly,Card,East,3,1,82.0,1
+1901,64,110.82,61,5,5,Quarterly,UPI,South,4,1,52.9,0
+1902,35,59.26,25,5,19,Monthly,Wallet,South,2,1,51.6,0
+1903,29,322.45,47,8,35,Annual,UPI,South,3,0,76.8,1
+1904,61,187.64,48,3,25,Annual,Card,West,4,1,88.9,1
+1905,56,392.11,33,7,29,Annual,Card,South,5,1,51.0,1
+1906,48,69.36,16,5,3,Monthly,Card,South,1,0,30.0,1
+1907,63,159.22,36,4,27,Quarterly,Card,East,2,0,24.8,1
+1908,58,86.64,27,8,39,Monthly,Card,West,1,0,13.2,1
+1909,35,59.17,29,4,6,Monthly,Bank Transfer,South,1,0,65.4,0
+1910,47,257.46,49,0,34,Annual,Card,West,3,0,84.4,0
+1911,49,96.78,49,2,25,Quarterly,Card,North,2,0,33.3,1
+1912,22,145.51,58,0,24,Quarterly,Bank Transfer,North,5,1,37.4,1
+1913,38,126.24,21,2,14,Monthly,Wallet,West,5,0,81.1,1
+1914,65,94.33,58,2,18,Quarterly,Card,East,2,1,30.1,1
+1915,24,95.88,37,8,30,Quarterly,UPI,South,4,0,26.3,0
+1916,32,66.12,23,2,34,Monthly,UPI,East,2,0,75.8,0
+1917,46,62.58,17,3,38,Monthly,Card,South,3,1,46.6,1
+1918,45,138.79,51,8,34,Monthly,Card,West,4,1,91.6,1
+1919,54,205.68,17,0,13,Annual,Card,West,1,1,80.8,0
+1920,22,35.96,58,2,41,Monthly,UPI,South,3,1,27.0,1
+1921,34,48.53,32,2,40,Monthly,Card,North,1,1,38.7,1
+1922,53,188.64,9,5,21,Quarterly,Card,West,2,1,88.0,1
+1923,34,73.7,52,5,39,Quarterly,Card,West,4,1,61.0,1
+1924,53,106.79,20,6,21,Monthly,UPI,North,4,1,18.0,1
+1925,21,160.67,54,2,27,Annual,Card,South,5,1,94.1,0
+1926,35,121.05,15,1,42,Monthly,Wallet,West,4,1,60.5,0
+1927,42,100.77,67,4,38,Quarterly,Card,South,2,0,78.3,0
+1928,24,347.85,14,2,35,Annual,Card,East,2,0,84.3,1
+1929,46,134.39,32,2,39,Monthly,Card,North,4,0,74.7,0
+1930,42,283.64,63,7,25,Annual,Card,South,5,0,41.5,1
+1931,45,294.48,2,2,34,Annual,Card,North,4,1,85.7,1
+1932,23,24.27,46,1,2,Monthly,Wallet,East,2,1,34.7,1
+1933,31,274.26,14,4,37,Annual,UPI,West,3,0,79.9,0
+1934,27,60.07,5,6,21,Monthly,Card,East,2,1,77.9,1
+1935,36,173.94,27,3,29,Annual,UPI,East,2,0,8.3,0
+1936,39,123.29,62,6,26,Annual,UPI,South,1,1,89.4,1
+1937,23,310.82,24,7,29,Annual,UPI,West,4,1,45.5,0
+1938,65,143.59,33,6,5,Monthly,UPI,South,4,1,18.3,1
+1939,47,94.19,44,5,21,Monthly,Card,East,1,0,48.5,1
+1940,53,117.57,56,0,29,Monthly,Card,South,5,1,53.5,0
+1941,51,312.68,30,5,37,Annual,Card,West,2,1,28.8,1
+1942,21,129.09,31,6,0,Monthly,Card,West,4,0,91.3,1
+1943,61,266.52,64,3,34,Annual,UPI,North,5,1,75.2,0
+1944,21,89.62,62,0,6,Quarterly,Card,South,2,1,20.2,1
+1945,39,89.33,10,2,7,Monthly,Bank Transfer,North,1,0,10.9,1
+1946,53,218.33,66,1,30,Annual,UPI,West,5,1,75.7,1
+1947,22,379.7,9,2,9,Annual,Bank Transfer,North,3,0,52.0,1
+1948,45,365.27,28,2,12,Annual,Card,West,5,1,74.6,0
+1949,52,55.65,48,3,2,Quarterly,Bank Transfer,East,1,1,21.9,0
+1950,21,310.66,18,1,38,Annual,UPI,North,5,0,58.4,0
+1951,61,104.21,38,0,6,Monthly,Card,West,1,1,64.8,0
+1952,25,319.99,40,4,26,Annual,Card,West,1,0,93.3,0
+1953,44,90.82,41,1,11,Monthly,Wallet,East,5,0,57.4,0
+1954,26,243.45,71,4,6,Annual,Bank Transfer,East,4,0,33.1,1
+1955,58,90.75,61,5,25,Monthly,UPI,North,5,0,28.8,1
+1956,57,184.81,61,3,45,Annual,Card,North,2,0,71.4,0
+1957,57,234.13,64,8,15,Annual,UPI,South,1,1,24.0,0
+1958,58,79.83,54,4,41,Monthly,Card,North,5,1,5.1,1
+1959,58,31.97,6,3,15,Monthly,UPI,South,1,0,66.6,1
+1960,65,52.38,58,2,9,Monthly,Card,South,1,1,34.3,1
+1961,34,110.51,63,7,17,Monthly,Card,South,4,0,27.7,1
+1962,34,113.1,37,4,11,Monthly,UPI,South,4,0,47.6,1
+1963,38,227.72,21,7,14,Annual,Wallet,East,4,0,6.5,0
+1964,28,44.55,13,4,42,Monthly,Card,East,5,1,72.2,1
+1965,63,253.65,64,8,0,Annual,UPI,South,2,0,34.5,1
+1966,40,185.07,26,6,42,Annual,Card,East,5,1,13.6,1
+1967,36,32.33,72,0,44,Monthly,Bank Transfer,West,1,0,55.9,1
+1968,27,179.68,18,3,13,Quarterly,Wallet,West,2,1,13.7,0
+1969,34,141.33,12,4,38,Monthly,Wallet,North,5,0,9.0,1
+1970,34,301.59,12,8,37,Annual,UPI,North,2,1,5.0,0
+1971,61,75.92,23,2,14,Quarterly,UPI,South,1,0,22.6,1
+1972,28,242.6,39,6,9,Annual,UPI,East,1,0,47.6,1
+1973,31,92.86,56,3,44,Monthly,Card,North,2,1,69.2,0
+1974,58,199.77,69,3,28,Annual,UPI,South,4,0,60.0,0
+1975,22,94.17,12,1,44,Monthly,Card,West,2,0,25.7,1
+1976,29,99.36,17,3,3,Monthly,Card,South,5,0,26.7,1
+1977,32,26.43,18,3,44,Monthly,Bank Transfer,South,1,0,61.2,1
+1978,38,266.52,2,0,42,Annual,Card,North,1,0,12.5,1
+1979,27,56.56,8,0,9,Monthly,UPI,East,3,1,39.1,1
+1980,30,120.17,37,7,33,Quarterly,Bank Transfer,West,1,0,20.8,1
+1981,50,100.4,34,3,24,Monthly,Bank Transfer,North,3,1,13.0,1
+1982,38,74.52,7,5,19,Monthly,Wallet,East,2,1,70.7,1
+1983,60,74.69,68,2,8,Quarterly,Bank Transfer,North,1,0,29.1,0
+1984,54,253.79,23,8,30,Annual,Card,East,4,0,51.4,1
+1985,25,20.91,22,8,36,Monthly,Card,East,3,1,31.8,1
+1986,48,99.13,11,7,2,Monthly,Card,East,4,1,90.1,0
+1987,32,102.88,44,8,43,Monthly,Card,East,2,1,22.3,1
+1988,39,58.16,29,1,23,Monthly,Wallet,North,2,0,79.7,1
+1989,42,107.14,38,3,13,Monthly,UPI,North,2,0,92.3,1
+1990,35,297.64,13,7,33,Annual,UPI,North,4,0,54.0,1
+1991,46,99.43,53,0,4,Quarterly,Wallet,North,1,1,73.3,0
+1992,54,360.27,27,0,1,Annual,Card,South,5,0,35.1,0
+1993,42,74.88,37,1,26,Monthly,UPI,East,1,0,40.3,0
+1994,54,78.58,70,4,14,Quarterly,Bank Transfer,North,2,1,52.7,0
+1995,31,148.26,10,3,28,Annual,Bank Transfer,South,3,1,35.4,1
+1996,55,109.16,3,5,15,Monthly,UPI,East,4,1,43.6,1
+1997,22,135.2,67,3,23,Annual,Wallet,North,4,1,84.6,1
+1998,34,28.99,33,5,22,Monthly,Card,South,1,1,50.8,1
+1999,30,123.76,38,0,7,Quarterly,Wallet,East,2,1,85.7,0
+2000,63,217.74,53,0,13,Annual,UPI,South,2,1,60.3,0
+2001,53,70.63,38,4,36,Monthly,Bank Transfer,North,2,0,69.3,1
+2002,61,108.11,38,8,41,Monthly,Bank Transfer,West,5,1,13.1,1
+2003,30,167.03,65,4,36,Monthly,Card,North,5,0,90.8,1
+2004,48,41.15,53,0,35,Monthly,Bank Transfer,North,4,0,40.8,1
+2005,40,170.36,67,3,20,Quarterly,Wallet,South,5,1,63.5,0
+2006,39,199.36,16,2,44,Annual,UPI,West,5,1,35.7,0
+2007,48,111.11,49,5,26,Quarterly,Card,West,1,0,6.3,1
+2008,54,132.59,33,3,17,Monthly,Card,North,4,0,26.7,1
+2009,31,56.69,66,6,38,Monthly,Card,North,4,1,10.6,1
+2010,60,115.47,7,1,24,Monthly,Wallet,North,5,0,60.1,1
+2011,32,247.71,53,2,3,Annual,Bank Transfer,West,3,0,62.4,1
+2012,49,229.05,17,2,22,Annual,UPI,West,1,0,72.1,1
+2013,65,234.71,3,6,33,Annual,Card,East,5,1,11.0,1
+2014,31,86.62,14,7,34,Monthly,Wallet,West,1,1,6.0,1
+2015,28,80.22,17,7,31,Monthly,Card,East,5,1,38.8,1
+2016,31,223.9,51,4,32,Annual,Card,South,1,0,43.8,1
+2017,55,51.48,64,8,10,Monthly,Card,West,2,0,6.3,1
+2018,61,81.45,22,8,21,Monthly,Bank Transfer,West,4,1,26.0,1
+2019,32,75.39,4,5,14,Monthly,Wallet,West,5,1,91.4,1
+2020,28,43.16,64,3,25,Monthly,UPI,West,5,0,82.4,1
+2021,35,128.68,12,6,43,Quarterly,Card,South,3,0,75.0,0
+2022,54,165.62,18,5,36,Quarterly,Wallet,North,4,1,72.9,1
+2023,55,102.99,21,2,2,Monthly,Bank Transfer,North,3,0,90.6,0
+2024,37,88.66,39,5,39,Monthly,Card,South,5,0,63.3,0
+2025,65,225.41,31,8,25,Quarterly,Card,South,4,1,48.0,1
+2026,25,286.48,64,8,31,Annual,Card,West,4,0,82.1,1
+2027,54,150.55,69,5,43,Quarterly,Bank Transfer,North,5,0,40.9,1
+2028,44,198.81,59,0,1,Annual,Card,East,1,0,30.2,0
+2029,46,103.66,46,4,11,Monthly,Card,South,2,0,66.5,0
+2030,55,325.71,44,6,10,Annual,Wallet,North,3,0,66.6,1
+2031,42,101.65,52,3,44,Monthly,Wallet,South,2,1,52.7,1
+2032,46,112.02,67,4,24,Monthly,Card,West,5,1,6.4,1
+2033,61,167.29,15,7,38,Quarterly,UPI,North,4,0,9.2,0
+2034,34,119.4,59,1,20,Monthly,Card,East,3,0,14.7,0
+2035,54,52.74,41,0,1,Monthly,UPI,West,5,1,90.7,1
+2036,43,20.61,68,7,35,Monthly,Card,North,1,0,73.2,1
+2037,46,66.89,72,6,26,Monthly,Card,East,1,1,82.8,0
+2038,29,114.25,36,8,40,Monthly,Card,East,3,1,91.8,1
+2039,60,172.8,43,0,8,Annual,Wallet,West,1,0,8.9,0
+2040,29,132.85,42,5,4,Quarterly,UPI,North,2,0,34.2,0
+2041,39,124.82,50,7,9,Monthly,UPI,West,4,0,43.1,0
+2042,29,35.56,48,4,13,Monthly,Bank Transfer,South,1,0,77.5,1
+2043,33,129.25,40,1,3,Quarterly,UPI,North,4,0,84.7,1
+2044,55,54.7,59,2,11,Monthly,Bank Transfer,North,3,1,46.8,1
+2045,57,203.67,66,7,24,Annual,Card,North,5,0,70.7,1
+2046,25,103.09,28,2,1,Monthly,Card,West,3,0,20.5,0
+2047,48,310.2,39,3,35,Annual,UPI,North,5,0,26.3,0
+2048,34,125.47,54,1,31,Monthly,Wallet,East,4,1,24.7,1
+2049,52,112.86,58,7,0,Quarterly,UPI,South,2,0,44.6,0
+2050,28,109.59,18,8,33,Monthly,UPI,East,2,0,18.4,1
+2051,24,80.23,34,8,31,Monthly,Card,North,5,1,51.7,1
+2052,44,88.35,69,6,3,Quarterly,Card,South,1,0,6.6,0
+2053,41,89.09,27,1,1,Monthly,Card,South,2,0,75.1,1
+2054,62,267.7,26,0,36,Annual,Bank Transfer,North,4,1,12.4,0
+2055,30,98.93,53,7,42,Monthly,Card,West,2,0,15.4,0
+2056,23,42.9,18,5,42,Monthly,UPI,West,5,1,88.9,1
+2057,42,45.38,59,4,33,Monthly,Card,South,1,0,73.8,1
+2058,29,285.03,18,2,38,Annual,UPI,East,3,1,16.6,0
+2059,25,241.53,28,5,8,Annual,UPI,North,5,1,79.1,0
+2060,56,127.69,17,3,1,Monthly,Card,East,3,0,84.9,1
+2061,31,137.11,8,2,38,Monthly,Bank Transfer,East,5,0,44.9,1
+2062,39,89.05,44,5,16,Monthly,Wallet,North,2,0,25.0,0
+2063,46,231.43,48,6,19,Annual,Bank Transfer,West,5,0,38.4,0
+2064,37,89.22,60,6,0,Monthly,Card,East,1,0,54.9,0
+2065,47,128.59,36,1,31,Quarterly,Card,West,2,1,51.5,1
+2066,22,292.55,8,7,5,Annual,Card,East,2,0,41.8,0
+2067,39,64.49,63,4,12,Monthly,Bank Transfer,East,4,0,15.3,1
+2068,49,109.98,64,0,13,Monthly,Card,East,1,0,35.0,0
+2069,49,236.34,56,2,5,Annual,UPI,West,3,0,52.2,0
+2070,48,63.99,9,1,3,Monthly,Wallet,North,4,1,65.0,1
+2071,56,17.94,1,5,15,Monthly,UPI,East,1,1,75.6,1
+2072,52,264.59,29,1,12,Annual,Card,West,4,1,66.7,0
+2073,27,66.73,63,7,36,Monthly,Bank Transfer,North,3,0,26.0,1
+2074,59,109.62,58,0,4,Monthly,Bank Transfer,North,3,0,84.5,1
+2075,55,332.0,8,2,42,Annual,Card,West,1,1,13.6,1
+2076,60,191.43,19,1,5,Quarterly,Bank Transfer,West,4,0,70.8,0
+2077,25,256.78,39,8,8,Annual,Wallet,East,2,0,45.6,1
+2078,53,73.05,8,0,16,Monthly,Wallet,South,5,0,42.7,1
+2079,40,121.61,21,8,31,Quarterly,Card,North,5,1,76.2,1
+2080,63,322.13,35,0,37,Annual,Bank Transfer,North,3,0,69.2,1
+2081,56,137.88,71,8,14,Quarterly,Card,East,3,1,36.9,1
+2082,39,158.31,37,6,24,Quarterly,UPI,West,5,0,69.8,1
+2083,30,67.24,21,5,37,Quarterly,Card,South,2,1,29.8,1
+2084,46,119.07,56,2,16,Monthly,Bank Transfer,North,4,1,18.6,0
+2085,26,125.09,32,5,42,Monthly,Card,North,5,0,94.9,0
+2086,42,89.09,42,8,32,Monthly,Card,East,1,1,34.9,1
+2087,30,94.45,41,0,12,Monthly,Bank Transfer,West,3,1,7.5,0
+2088,25,142.29,69,8,40,Annual,Card,East,1,0,83.0,1
+2089,27,248.44,51,6,16,Annual,UPI,South,5,1,60.5,0
+2090,49,103.7,12,5,21,Monthly,Bank Transfer,East,5,1,93.1,1
+2091,64,172.23,49,0,22,Annual,Wallet,South,1,0,47.7,0
+2092,46,77.11,17,1,32,Monthly,Card,West,5,1,34.5,1
+2093,29,77.33,23,0,18,Monthly,Wallet,East,4,1,66.4,1
+2094,41,277.97,40,5,27,Annual,Card,North,3,1,73.1,1
+2095,35,103.65,55,2,15,Monthly,Bank Transfer,North,3,1,76.9,0
+2096,24,78.52,30,0,0,Monthly,Bank Transfer,East,4,0,82.0,0
+2097,51,79.87,18,5,39,Quarterly,Bank Transfer,West,1,1,7.5,0
+2098,37,66.46,8,0,34,Monthly,Bank Transfer,West,1,0,47.7,0
+2099,32,141.99,57,0,17,Quarterly,UPI,East,4,0,94.5,0
+2100,31,111.62,62,5,14,Monthly,Bank Transfer,South,4,1,67.7,0
+2101,31,175.68,40,2,7,Monthly,Card,South,5,0,50.3,0
+2102,48,115.61,60,5,9,Monthly,UPI,East,2,0,15.0,1
+2103,52,147.31,58,7,25,Quarterly,Bank Transfer,North,2,0,64.8,0
+2104,55,26.05,61,5,45,Monthly,Card,North,1,0,77.1,1
+2105,33,30.7,42,8,32,Monthly,Bank Transfer,South,2,1,61.2,0
+2106,61,215.61,57,7,32,Annual,Bank Transfer,West,3,0,80.8,1
+2107,48,146.85,9,7,38,Monthly,Bank Transfer,East,5,0,45.5,1
+2108,41,117.5,69,7,32,Monthly,Bank Transfer,South,5,1,83.7,1
+2109,30,305.89,40,5,30,Annual,UPI,North,5,0,80.4,0
+2110,59,39.4,23,4,8,Monthly,Wallet,East,2,0,58.3,0
+2111,63,85.18,27,2,33,Monthly,Card,South,5,0,69.1,1
+2112,32,274.44,60,6,24,Annual,Card,West,1,0,86.9,1
+2113,45,80.03,25,5,24,Monthly,Bank Transfer,East,1,1,10.6,0
+2114,58,71.28,36,6,35,Monthly,Card,West,2,0,33.3,1
+2115,22,32.89,1,5,17,Monthly,UPI,South,3,1,44.4,1
+2116,48,20.14,48,4,5,Monthly,Card,West,1,0,93.8,0
+2117,38,270.75,48,8,12,Annual,Bank Transfer,North,4,1,54.3,1
+2118,59,163.33,70,6,35,Monthly,Card,South,5,0,47.5,1
+2119,58,168.85,59,6,1,Monthly,Card,North,5,0,16.4,0
+2120,61,108.24,49,0,19,Monthly,Bank Transfer,South,1,0,73.5,1
+2121,53,54.66,63,7,18,Monthly,Wallet,West,1,0,48.9,1
+2122,30,115.51,18,6,17,Monthly,Bank Transfer,West,2,0,17.7,0
+2123,37,296.6,14,8,22,Annual,Card,South,3,1,48.7,1
+2124,44,133.29,7,1,40,Monthly,Card,North,4,0,88.3,1
+2125,51,150.71,36,0,3,Annual,Bank Transfer,East,1,1,51.8,1
+2126,29,126.74,1,7,4,Annual,Card,East,1,1,89.9,1
+2127,32,390.78,12,5,11,Annual,UPI,North,4,0,72.3,0
+2128,29,43.08,56,5,43,Monthly,Card,North,1,0,91.1,1
+2129,56,236.91,19,8,29,Annual,UPI,South,4,0,82.9,1
+2130,26,162.77,61,3,19,Annual,UPI,South,5,0,24.2,0
+2131,63,179.6,9,7,18,Quarterly,Card,South,2,1,44.4,1
+2132,46,345.68,5,6,28,Annual,Wallet,West,2,0,94.1,0
+2133,41,176.96,52,2,34,Annual,Card,East,1,1,35.1,0
+2134,43,95.55,27,2,0,Monthly,Wallet,South,5,0,53.7,0
+2135,63,205.35,13,1,6,Annual,Card,South,4,1,13.5,0
+2136,24,86.31,52,5,14,Quarterly,Card,North,3,1,67.9,1
+2137,41,303.82,8,0,10,Annual,Wallet,East,4,0,12.1,0
+2138,62,186.51,44,0,28,Quarterly,Bank Transfer,West,3,0,91.0,0
+2139,43,263.07,4,3,42,Annual,Bank Transfer,East,1,0,5.9,1
+2140,65,183.69,45,2,2,Annual,Card,East,2,1,9.1,0
+2141,27,149.7,23,8,22,Annual,Wallet,East,3,0,86.8,1
+2142,52,117.3,51,6,35,Quarterly,Bank Transfer,North,1,0,54.2,1
+2143,38,157.71,25,4,19,Quarterly,Card,South,5,1,82.6,1
+2144,21,132.91,10,7,13,Monthly,Bank Transfer,North,4,1,28.0,1
+2145,32,100.26,29,3,19,Quarterly,Bank Transfer,South,3,0,11.3,0
+2146,43,30.5,66,4,15,Monthly,Bank Transfer,West,1,0,84.8,1
+2147,64,129.23,43,8,34,Monthly,Wallet,West,4,1,82.1,1
+2148,23,75.42,23,0,44,Monthly,UPI,West,2,1,38.3,1
+2149,21,208.84,21,3,45,Annual,Card,East,5,0,21.3,1
+2150,43,187.26,67,7,0,Annual,Bank Transfer,North,3,0,44.0,1
+2151,58,343.18,61,2,45,Annual,Bank Transfer,West,1,1,55.0,0
+2152,65,187.1,20,8,37,Quarterly,Card,West,4,0,77.3,1
+2153,31,182.83,7,2,35,Annual,Bank Transfer,North,2,1,53.3,1
+2154,38,95.34,17,8,7,Monthly,Wallet,South,1,1,92.7,1
+2155,21,82.71,36,2,14,Monthly,Bank Transfer,North,2,0,69.5,0
+2156,23,168.96,54,5,3,Annual,UPI,North,4,1,40.6,0
+2157,49,109.16,69,3,8,Monthly,Card,North,1,0,63.7,1
+2158,40,99.79,68,3,7,Monthly,Bank Transfer,South,1,1,27.3,1
+2159,26,382.7,54,7,0,Annual,Card,North,5,0,38.0,0
+2160,23,86.06,11,8,25,Monthly,UPI,South,3,1,10.4,0
+2161,46,146.03,29,6,22,Annual,UPI,South,1,1,63.3,0
+2162,28,65.97,28,6,42,Monthly,Wallet,East,2,1,89.7,1
+2163,23,88.61,53,2,40,Monthly,Bank Transfer,North,2,1,86.7,1
+2164,36,154.01,59,2,23,Annual,UPI,East,1,1,52.8,1
+2165,26,299.12,52,0,23,Annual,Card,West,3,1,82.7,0
+2166,46,171.97,43,3,23,Quarterly,UPI,East,2,1,38.4,1
+2167,25,107.28,11,2,21,Monthly,Wallet,South,3,1,7.0,0
+2168,53,116.38,19,5,23,Monthly,Card,West,5,1,40.7,0
+2169,29,67.79,35,2,24,Monthly,UPI,North,1,1,9.7,1
+2170,47,161.13,40,3,45,Annual,Card,East,1,1,56.0,1
+2171,55,126.06,68,5,10,Quarterly,UPI,West,2,0,12.1,1
+2172,63,80.18,65,7,16,Monthly,UPI,West,3,1,9.4,1
+2173,54,88.9,29,7,29,Monthly,Card,South,4,0,57.0,0
+2174,62,271.41,20,7,34,Annual,Wallet,East,1,0,88.5,1
+2175,64,90.84,24,5,29,Monthly,Card,East,2,0,43.3,1
+2176,46,92.2,64,2,2,Monthly,Bank Transfer,North,2,0,22.8,0
+2177,59,149.03,32,5,8,Quarterly,Bank Transfer,West,3,1,79.5,0
+2178,49,75.17,1,4,23,Monthly,Bank Transfer,South,4,0,75.4,1
+2179,26,202.01,6,8,11,Annual,Bank Transfer,West,4,1,75.9,1
+2180,52,161.59,71,3,35,Monthly,Card,East,5,0,68.5,0
+2181,55,385.3,26,5,28,Annual,UPI,West,3,0,18.1,1
+2182,53,104.0,33,2,22,Monthly,Card,East,5,0,69.6,1
+2183,45,97.87,28,5,41,Monthly,UPI,East,1,1,26.8,1
+2184,55,31.32,36,1,15,Monthly,Card,West,1,1,65.2,1
+2185,63,91.19,52,0,32,Monthly,UPI,South,3,1,25.6,0
+2186,23,37.8,23,1,23,Monthly,Card,North,1,1,93.0,1
+2187,57,136.15,28,5,28,Annual,Card,West,5,1,37.2,1
+2188,31,128.59,13,2,42,Quarterly,Card,West,1,0,32.7,1
+2189,55,87.76,67,7,13,Quarterly,Bank Transfer,North,1,0,43.4,1
+2190,45,202.55,68,8,39,Quarterly,Card,East,4,1,36.7,0
+2191,40,18.27,43,4,12,Monthly,Bank Transfer,West,1,1,21.4,1
+2192,52,211.0,59,4,30,Annual,Card,East,1,0,5.1,1
+2193,46,64.72,40,1,26,Monthly,Card,West,2,1,85.1,1
+2194,41,115.34,50,4,36,Quarterly,Bank Transfer,North,4,0,91.7,0
+2195,35,83.06,60,0,11,Monthly,Card,East,3,1,14.9,1
+2196,41,201.7,51,5,18,Quarterly,Wallet,East,4,1,27.3,1
+2197,37,348.03,16,6,36,Annual,UPI,East,5,0,72.8,1
+2198,38,303.79,19,3,3,Annual,Card,South,5,1,50.0,0
+2199,62,134.08,13,3,10,Annual,Bank Transfer,East,1,0,94.8,0
+2200,51,100.8,25,4,40,Monthly,UPI,East,4,1,35.3,1
+2201,57,86.36,19,3,36,Monthly,Card,North,1,0,17.7,1
+2202,46,332.87,25,5,37,Annual,Bank Transfer,West,3,1,91.7,0
+2203,37,259.46,34,5,25,Annual,Bank Transfer,South,4,0,12.6,1
+2204,47,49.48,5,3,12,Monthly,UPI,South,3,1,31.3,1
+2205,47,149.5,70,0,2,Monthly,UPI,West,5,1,69.0,1
+2206,62,31.32,57,4,4,Monthly,UPI,West,4,1,21.9,0
+2207,44,297.17,55,6,21,Annual,Card,East,2,1,72.6,0
+2208,60,199.72,18,5,25,Annual,Card,North,5,0,24.4,1
+2209,65,96.58,47,0,28,Monthly,Wallet,West,4,0,74.8,1
+2210,62,55.23,30,8,16,Monthly,Card,South,4,0,26.1,1
+2211,25,216.33,12,7,45,Annual,UPI,North,2,0,64.6,1
+2212,37,166.91,61,7,20,Quarterly,Bank Transfer,North,3,1,14.5,1
+2213,55,93.06,20,7,40,Monthly,UPI,West,2,1,50.5,1
+2214,42,50.1,33,8,9,Monthly,UPI,East,2,1,27.4,1
+2215,24,162.25,31,5,44,Monthly,Bank Transfer,North,5,1,77.7,0
+2216,52,91.59,20,5,6,Monthly,Card,South,5,1,67.5,1
+2217,30,181.36,32,3,35,Annual,Wallet,East,4,0,19.7,1
+2218,37,164.92,25,0,44,Quarterly,Bank Transfer,South,5,0,23.2,0
+2219,52,53.68,2,4,29,Monthly,Bank Transfer,East,1,0,5.9,1
+2220,41,121.66,33,2,25,Monthly,UPI,West,4,0,19.4,1
+2221,41,141.33,20,0,26,Annual,Card,East,1,1,36.4,0
+2222,30,126.25,53,3,2,Quarterly,Card,East,2,1,33.4,0
+2223,62,80.44,24,0,27,Monthly,UPI,East,4,0,35.2,1
+2224,27,103.97,6,4,36,Monthly,Bank Transfer,North,5,0,68.4,1
+2225,25,153.74,48,8,9,Monthly,Card,North,4,1,53.2,1
+2226,56,100.97,18,0,2,Monthly,Card,East,4,0,56.3,1
+2227,41,131.62,37,6,19,Annual,Wallet,West,1,1,70.2,0
+2228,32,96.64,9,0,18,Monthly,Card,East,2,1,52.9,1
+2229,65,252.13,20,6,37,Annual,Card,West,5,1,56.8,1
+2230,35,151.13,22,0,3,Annual,Card,North,1,1,89.3,1
+2231,61,136.89,32,8,15,Monthly,UPI,East,5,0,89.2,0
+2232,60,81.55,21,7,27,Monthly,Bank Transfer,West,2,0,21.0,1
+2233,34,57.53,65,5,40,Monthly,Bank Transfer,North,1,1,20.9,0
+2234,33,104.41,26,3,45,Monthly,Bank Transfer,South,5,0,13.9,1
+2235,25,96.71,52,7,31,Monthly,Card,North,4,0,63.6,0
+2236,55,114.32,32,1,39,Monthly,UPI,East,2,1,59.6,1
+2237,58,309.05,45,7,11,Annual,Bank Transfer,East,1,0,68.1,0
+2238,43,148.02,58,3,19,Quarterly,Card,East,5,0,35.9,0
+2239,29,140.43,35,7,9,Quarterly,Bank Transfer,West,5,1,43.1,1
+2240,21,141.34,64,4,35,Quarterly,Bank Transfer,East,3,1,41.5,1
+2241,50,78.09,27,6,37,Monthly,UPI,East,5,0,94.8,1
+2242,63,64.69,42,2,7,Quarterly,UPI,North,1,0,40.9,1
+2243,55,85.24,46,8,6,Monthly,Bank Transfer,East,2,0,55.1,1
+2244,55,96.83,34,1,35,Quarterly,Bank Transfer,West,3,1,93.6,1
+2245,34,44.21,52,1,37,Monthly,Card,West,5,1,63.1,1
+2246,33,228.67,56,7,36,Annual,Wallet,East,1,1,87.3,0
+2247,22,57.83,48,1,3,Monthly,UPI,West,2,1,87.7,1
+2248,63,82.36,48,2,19,Monthly,Card,West,1,1,17.8,1
+2249,41,182.46,24,1,38,Annual,UPI,South,1,1,26.2,1
+2250,45,112.91,48,3,38,Monthly,Card,East,4,1,20.4,1
+2251,29,60.64,14,2,44,Monthly,UPI,South,5,0,5.3,0
+2252,51,83.7,60,7,10,Monthly,UPI,South,4,1,53.2,1
+2253,31,116.83,45,2,45,Monthly,UPI,South,3,0,41.5,1
+2254,24,85.8,40,1,16,Monthly,Bank Transfer,East,4,1,32.7,1
+2255,54,204.76,15,7,7,Annual,UPI,East,3,1,68.2,1
+2256,35,90.89,25,1,33,Monthly,Bank Transfer,South,2,1,12.5,0
+2257,48,242.85,72,1,22,Annual,Bank Transfer,South,2,1,53.9,1
+2258,28,104.2,28,5,14,Monthly,Card,East,4,0,14.1,0
+2259,52,86.34,21,6,37,Monthly,Bank Transfer,West,1,1,25.2,1
+2260,37,237.91,5,1,3,Annual,Card,North,5,1,48.2,1
+2261,26,122.23,37,2,41,Monthly,Card,East,3,1,29.9,1
+2262,50,170.15,63,5,40,Quarterly,Card,East,5,1,72.9,1
+2263,58,114.64,18,4,33,Monthly,Bank Transfer,North,5,0,62.5,1
+2264,40,355.85,13,4,13,Annual,Card,East,4,1,73.4,1
+2265,22,185.0,69,1,5,Monthly,Bank Transfer,West,5,0,59.9,1
+2266,22,384.45,14,7,29,Annual,Bank Transfer,South,5,0,38.3,0
+2267,26,175.11,60,0,42,Quarterly,UPI,North,3,0,16.4,1
+2268,36,144.9,40,2,41,Annual,Bank Transfer,West,3,1,15.9,0
+2269,53,288.28,8,2,19,Annual,Card,East,2,1,23.6,1
+2270,46,82.74,45,8,38,Monthly,Card,South,4,0,23.8,0
+2271,48,45.93,58,3,5,Monthly,Bank Transfer,East,3,1,78.8,1
+2272,39,71.92,18,8,15,Monthly,Wallet,North,4,1,21.4,1
+2273,42,274.01,49,4,16,Annual,Card,North,1,1,11.9,0
+2274,42,119.56,53,4,2,Monthly,UPI,East,3,0,8.4,1
+2275,47,98.86,34,4,43,Monthly,Card,North,3,1,15.4,1
+2276,23,122.56,23,2,32,Monthly,Card,North,5,1,89.5,0
+2277,36,348.54,18,7,7,Annual,UPI,West,4,1,84.9,0
+2278,45,306.36,26,4,13,Annual,UPI,North,5,0,50.7,0
+2279,34,82.32,2,4,6,Monthly,UPI,West,2,0,59.5,0
+2280,22,93.81,45,4,10,Monthly,Card,South,1,1,11.1,1
+2281,49,51.45,9,0,3,Monthly,Card,East,4,1,14.0,1
+2282,60,118.9,19,2,17,Monthly,Bank Transfer,North,5,1,7.5,0
+2283,47,97.55,64,4,9,Monthly,Card,North,2,1,6.3,1
+2284,60,63.37,68,6,6,Monthly,Card,West,4,0,9.5,0
+2285,23,96.4,51,6,8,Monthly,Card,South,1,1,22.7,1
+2286,27,107.21,4,7,13,Monthly,Card,North,5,1,13.1,1
+2287,45,105.54,10,6,31,Quarterly,UPI,West,2,0,15.8,1
+2288,28,333.15,71,1,30,Annual,Card,South,1,1,28.1,1
+2289,29,62.82,2,2,21,Monthly,Card,West,2,0,87.0,1
+2290,38,57.86,24,6,39,Monthly,UPI,West,1,0,65.7,1
+2291,62,18.67,18,4,22,Monthly,UPI,North,3,1,15.1,1
+2292,26,106.75,37,8,26,Monthly,Card,West,3,1,55.0,1
+2293,24,344.65,40,7,16,Annual,Bank Transfer,East,1,0,44.4,1
+2294,57,171.98,7,6,36,Monthly,Card,North,5,0,40.4,1
+2295,38,49.74,65,2,7,Monthly,Card,North,2,1,33.7,1
+2296,52,142.31,46,5,0,Quarterly,UPI,North,2,0,5.2,0
+2297,50,107.66,1,8,33,Monthly,Card,North,5,0,15.9,1
+2298,61,131.54,26,7,37,Monthly,Card,West,5,1,71.6,0
+2299,26,355.42,62,4,24,Annual,UPI,West,2,0,9.6,1
+2300,28,234.58,58,1,6,Annual,UPI,South,5,0,33.7,0
+2301,40,44.9,2,1,23,Monthly,Card,East,2,1,73.6,1
+2302,39,165.75,56,7,9,Quarterly,UPI,West,1,0,10.3,1
+2303,26,206.47,29,8,28,Quarterly,Card,South,5,1,92.1,1
+2304,37,84.14,30,5,40,Quarterly,Wallet,West,2,1,33.0,1
+2305,27,379.12,71,5,6,Annual,Bank Transfer,South,5,0,66.8,1
+2306,63,152.15,8,7,38,Annual,Card,North,2,0,10.0,1
+2307,22,67.41,26,2,36,Monthly,UPI,South,4,0,36.6,1
+2308,48,135.62,40,6,2,Monthly,Card,East,3,0,85.4,0
+2309,27,89.97,47,7,40,Quarterly,Card,North,2,1,49.3,1
+2310,31,22.94,17,7,42,Monthly,Card,North,2,1,45.8,0
+2311,46,228.21,10,7,26,Annual,UPI,East,5,1,51.0,1
+2312,24,85.59,53,1,32,Quarterly,Card,North,3,1,94.4,1
+2313,47,160.15,15,2,5,Annual,UPI,South,3,1,80.9,1
+2314,46,85.43,12,1,6,Quarterly,Card,East,5,1,74.7,1
+2315,40,45.72,65,8,11,Monthly,UPI,East,1,1,57.8,1
+2316,27,198.24,12,2,23,Annual,Wallet,South,3,0,64.1,1
+2317,40,124.62,1,3,31,Quarterly,Wallet,West,2,0,69.2,0
+2318,33,102.71,11,1,17,Monthly,Card,North,1,0,23.9,0
+2319,58,309.19,6,1,40,Annual,UPI,West,4,0,73.5,1
+2320,27,100.89,68,5,23,Quarterly,Card,West,1,0,11.9,1
+2321,31,89.72,67,0,30,Quarterly,UPI,West,2,1,58.9,1
+2322,53,94.23,17,3,43,Monthly,Bank Transfer,South,5,1,27.6,1
+2323,47,171.09,24,4,35,Quarterly,Card,North,1,1,75.6,0
+2324,33,234.93,24,2,7,Annual,Card,West,4,0,76.0,0
+2325,51,108.43,9,6,39,Monthly,UPI,East,1,0,57.0,1
+2326,24,334.79,19,6,4,Annual,UPI,East,1,1,88.5,0
+2327,31,51.09,69,3,36,Monthly,Card,North,2,1,53.8,1
+2328,25,323.92,6,2,6,Annual,Card,South,3,0,38.9,1
+2329,36,21.54,30,4,35,Monthly,UPI,East,1,0,5.3,1
+2330,30,91.16,16,5,30,Monthly,UPI,West,2,1,33.9,0
+2331,42,149.54,64,8,6,Annual,Card,East,3,1,28.4,1
+2332,45,53.0,56,5,17,Monthly,Card,East,4,1,47.2,1
+2333,28,48.62,69,3,30,Monthly,UPI,West,1,0,13.8,1
+2334,25,210.72,59,2,24,Annual,Bank Transfer,East,1,0,55.6,0
+2335,32,127.53,58,6,27,Quarterly,UPI,North,3,0,5.9,0
+2336,34,293.38,61,6,44,Annual,Card,West,2,1,59.3,1
+2337,63,112.62,30,2,3,Quarterly,UPI,West,3,1,75.0,0
+2338,51,89.33,42,7,27,Monthly,Card,North,3,0,33.3,1
+2339,50,134.74,21,6,4,Monthly,Card,East,5,0,26.7,0
+2340,29,94.24,23,2,41,Monthly,Card,North,2,1,14.3,1
+2341,52,55.5,21,8,23,Monthly,Card,East,1,1,29.1,1
+2342,58,130.84,24,0,11,Monthly,Bank Transfer,South,4,0,13.6,1
+2343,55,147.08,3,3,5,Monthly,Card,West,4,0,45.1,1
+2344,32,70.02,36,6,36,Monthly,Bank Transfer,East,2,0,82.7,1
+2345,55,85.18,42,4,3,Monthly,Bank Transfer,West,2,1,60.4,1
+2346,29,56.13,24,8,5,Monthly,Card,West,2,0,79.0,1
+2347,48,311.14,22,7,10,Annual,Bank Transfer,East,5,1,37.0,1
+2348,21,48.92,1,6,31,Monthly,Bank Transfer,East,3,1,81.2,0
+2349,31,193.45,48,4,15,Quarterly,Card,North,5,0,30.2,0
+2350,36,101.53,32,5,4,Monthly,Card,South,1,0,77.9,0
+2351,35,319.42,29,6,37,Annual,Card,North,5,1,67.6,0
+2352,46,302.19,1,8,1,Annual,Bank Transfer,South,3,0,16.0,1
+2353,42,260.11,8,1,9,Annual,Card,South,2,1,41.1,1
+2354,32,132.35,27,7,21,Quarterly,UPI,North,5,0,57.7,0
+2355,29,346.29,61,5,9,Annual,UPI,East,5,1,27.7,0
+2356,35,35.56,69,4,20,Monthly,Bank Transfer,South,2,1,10.5,1
+2357,27,65.12,13,1,19,Monthly,UPI,South,2,0,51.6,0
+2358,44,231.11,20,1,32,Quarterly,Card,South,5,0,68.7,1
+2359,21,158.55,6,6,31,Monthly,Bank Transfer,West,4,0,91.5,1
+2360,60,331.41,70,4,27,Annual,Card,West,3,0,84.5,0
+2361,55,60.19,62,2,25,Monthly,UPI,West,2,0,71.6,0
+2362,61,251.65,51,2,35,Annual,UPI,North,2,0,21.5,0
+2363,46,95.08,58,2,35,Monthly,UPI,East,4,0,58.0,1
+2364,38,77.5,2,0,38,Monthly,Bank Transfer,South,4,1,20.3,0
+2365,24,298.45,24,1,30,Annual,Card,South,3,0,6.7,1
+2366,33,20.52,39,7,5,Monthly,Card,South,1,0,39.4,1
+2367,23,49.18,54,0,30,Monthly,Card,North,4,0,40.2,1
+2368,32,99.75,55,2,14,Monthly,Card,West,1,0,93.5,1
+2369,26,248.04,13,6,22,Annual,Card,South,3,1,15.5,1
+2370,47,226.93,27,4,38,Annual,UPI,West,3,0,61.1,1
+2371,53,142.31,64,3,11,Quarterly,Card,North,3,0,8.7,0
+2372,31,111.46,26,8,24,Monthly,Card,East,5,1,45.4,1
+2373,45,341.88,36,7,11,Annual,Card,North,2,1,71.1,0
+2374,42,87.69,23,1,25,Quarterly,Card,East,3,0,33.9,1
+2375,37,83.84,53,1,18,Quarterly,Card,West,2,1,50.5,1
+2376,49,297.56,54,4,26,Annual,Wallet,East,4,0,66.1,1
+2377,63,92.83,67,0,3,Monthly,UPI,East,2,1,47.8,1
+2378,50,122.72,3,4,15,Quarterly,UPI,West,3,1,72.8,0
+2379,58,74.71,62,7,42,Monthly,Card,West,2,0,78.6,1
+2380,47,109.33,11,0,32,Monthly,UPI,East,4,1,34.6,1
+2381,57,58.46,66,8,30,Monthly,Card,South,4,0,71.8,1
+2382,29,147.63,8,4,41,Monthly,Card,West,5,1,73.8,1
+2383,32,287.4,21,0,30,Annual,UPI,West,2,0,74.0,1
+2384,28,118.66,27,3,29,Quarterly,Card,East,1,1,71.4,1
+2385,39,73.58,12,3,20,Monthly,Card,South,3,0,15.2,1
+2386,25,159.75,25,0,23,Quarterly,UPI,West,3,0,91.3,1
+2387,24,137.43,60,8,7,Quarterly,UPI,North,4,1,50.2,0
+2388,42,158.28,14,6,41,Annual,Bank Transfer,North,3,0,86.1,1
+2389,24,267.34,39,0,28,Annual,Wallet,West,1,0,7.8,1
+2390,46,52.1,71,2,41,Monthly,Card,West,3,1,80.8,1
+2391,58,132.21,60,4,5,Annual,Wallet,South,1,1,53.6,0
+2392,31,196.57,2,8,2,Annual,Card,South,5,0,80.7,0
+2393,33,135.27,35,3,20,Quarterly,UPI,East,5,1,61.7,0
+2394,26,60.2,19,4,10,Monthly,UPI,East,3,0,41.7,1
+2395,32,98.16,52,0,15,Quarterly,Card,West,5,1,63.4,0
+2396,65,82.9,55,4,32,Monthly,Card,South,1,1,76.1,1
+2397,53,58.77,64,3,33,Monthly,Card,West,3,1,89.5,1
+2398,50,202.38,37,1,8,Quarterly,Bank Transfer,West,3,1,56.0,1
+2399,37,132.86,22,6,36,Monthly,Bank Transfer,South,5,0,6.0,1
+2400,43,72.88,71,3,13,Monthly,Wallet,South,3,1,82.9,0
+2401,48,136.61,68,2,3,Monthly,Card,East,5,1,85.6,0
+2402,26,109.07,4,0,4,Monthly,Card,North,3,1,9.5,0
+2403,25,252.23,5,4,36,Annual,Card,South,1,0,32.0,0
+2404,51,26.59,42,6,19,Monthly,Bank Transfer,West,2,0,31.7,1
+2405,35,114.28,55,1,39,Monthly,Wallet,West,3,1,16.3,0
+2406,62,251.92,1,1,30,Annual,Card,South,3,0,61.5,1
+2407,51,104.03,1,4,15,Monthly,UPI,East,3,1,28.2,1
+2408,46,123.24,64,3,41,Monthly,Card,West,2,0,49.7,1
+2409,23,54.57,26,8,30,Monthly,Card,North,2,0,46.4,1
+2410,39,146.04,64,6,1,Monthly,Card,East,4,1,82.9,0
+2411,47,124.64,61,0,44,Monthly,UPI,North,5,1,13.1,1
+2412,45,73.92,72,5,32,Monthly,Card,North,1,1,36.2,1
+2413,60,84.2,51,0,41,Monthly,Card,North,4,1,5.2,1
+2414,40,38.24,32,8,9,Monthly,Card,North,2,0,77.4,1
+2415,23,107.46,36,0,42,Monthly,Card,West,4,0,18.6,1
+2416,59,77.79,44,6,8,Monthly,Card,South,2,0,88.9,0
+2417,48,85.06,6,2,2,Monthly,Bank Transfer,West,1,0,53.7,1
+2418,64,307.72,49,1,6,Annual,Card,West,3,1,54.8,1
+2419,62,77.6,21,2,1,Monthly,Card,West,3,0,59.1,1
+2420,65,192.42,26,1,28,Annual,Card,South,1,1,40.1,0
+2421,52,159.16,53,2,15,Annual,Wallet,South,3,1,88.1,1
+2422,29,137.37,1,3,24,Monthly,UPI,West,5,1,9.4,1
+2423,44,62.69,55,4,0,Monthly,UPI,North,5,0,6.0,1
+2424,22,79.27,44,2,44,Monthly,Card,East,2,1,73.1,0
+2425,46,92.59,6,2,29,Monthly,Bank Transfer,West,3,1,89.1,1
+2426,39,337.7,37,5,14,Annual,Wallet,East,5,0,16.2,1
+2427,34,93.14,43,6,25,Monthly,UPI,East,2,0,58.7,1
+2428,21,70.75,54,2,19,Monthly,UPI,North,5,1,7.7,1
+2429,29,37.91,47,8,23,Monthly,UPI,North,1,0,38.7,1
+2430,52,220.28,45,8,28,Annual,Card,North,5,0,38.6,1
+2431,24,270.86,28,1,43,Annual,Wallet,East,3,1,57.5,0
+2432,61,104.59,52,3,27,Quarterly,Card,East,3,1,84.7,0
+2433,50,97.19,60,0,11,Monthly,Wallet,East,2,1,81.3,1
+2434,32,79.6,63,3,13,Monthly,Bank Transfer,West,2,0,67.1,0
+2435,39,114.82,42,3,10,Monthly,Card,South,4,1,38.8,1
+2436,31,38.65,19,0,8,Monthly,Bank Transfer,East,2,0,7.0,1
+2437,32,20.82,39,7,42,Monthly,Card,South,1,0,85.1,1
+2438,65,174.94,57,5,27,Monthly,UPI,North,5,0,23.2,0
+2439,34,89.39,20,2,31,Quarterly,Card,West,4,1,47.0,0
+2440,46,276.28,57,0,13,Annual,UPI,North,5,1,9.7,1
+2441,61,88.1,61,4,3,Monthly,UPI,North,2,1,29.3,1
+2442,47,37.18,56,2,0,Monthly,Bank Transfer,North,1,0,68.6,0
+2443,37,209.96,58,4,20,Annual,UPI,East,5,1,63.1,0
+2444,57,277.65,33,8,27,Annual,UPI,North,1,1,78.2,1
+2445,48,86.02,33,6,6,Monthly,Card,South,2,0,19.1,0
+2446,27,60.54,30,4,1,Monthly,Card,East,1,0,21.4,1
+2447,58,238.43,64,4,11,Annual,UPI,East,2,1,40.8,0
+2448,29,117.65,8,5,42,Monthly,Bank Transfer,West,5,1,11.1,1
+2449,62,77.86,51,0,43,Monthly,Card,East,3,1,66.8,1
+2450,21,215.95,20,3,25,Annual,UPI,West,1,0,80.5,1
+2451,41,85.29,65,6,17,Monthly,Card,West,3,1,64.9,1
+2452,32,100.97,1,0,24,Monthly,Card,North,5,1,35.4,1
+2453,47,59.85,20,2,16,Monthly,Card,North,3,1,11.2,0
+2454,33,103.0,3,8,14,Monthly,Wallet,West,3,1,83.1,1
+2455,38,118.64,8,2,2,Monthly,Card,West,3,0,53.7,1
+2456,38,186.68,9,7,38,Quarterly,Card,West,4,1,17.1,1
+2457,54,89.95,60,3,22,Monthly,Card,North,4,1,31.9,1
+2458,37,160.84,18,6,0,Quarterly,UPI,North,2,1,29.3,0
+2459,59,294.97,3,7,12,Annual,Card,East,3,0,8.7,1
+2460,60,91.69,9,8,27,Monthly,Wallet,East,3,0,23.1,1
+2461,46,79.02,14,6,10,Quarterly,UPI,East,2,0,20.1,1
+2462,38,15.0,38,8,13,Monthly,Card,West,1,1,22.3,0
+2463,26,104.96,60,8,32,Monthly,Wallet,North,2,1,75.1,1
+2464,22,127.55,18,7,9,Annual,Wallet,South,2,1,15.7,1
+2465,57,136.14,41,4,45,Monthly,UPI,West,5,1,10.0,1
+2466,61,278.3,41,3,37,Annual,Card,East,5,0,94.0,1
+2467,53,119.53,64,0,35,Monthly,Bank Transfer,East,5,1,38.3,1
+2468,37,117.08,68,0,9,Quarterly,Card,South,1,1,40.9,0
+2469,59,105.09,71,8,6,Monthly,UPI,North,2,1,81.3,0
+2470,21,202.74,16,0,29,Annual,Card,North,5,0,24.8,1
+2471,53,144.96,59,0,15,Quarterly,UPI,East,3,0,42.9,1
+2472,33,79.24,63,7,15,Monthly,UPI,North,1,0,80.6,1
+2473,41,111.73,17,1,33,Monthly,Wallet,East,4,0,51.5,1
+2474,25,34.62,7,1,9,Monthly,Card,West,2,1,81.6,0
+2475,55,156.52,58,7,34,Quarterly,UPI,West,1,0,25.9,1
+2476,51,133.58,55,6,19,Quarterly,Card,South,1,0,43.9,1
+2477,28,69.87,58,2,38,Monthly,Wallet,East,2,1,26.0,1
+2478,26,94.2,21,3,14,Monthly,Card,East,2,1,13.1,1
+2479,58,89.59,27,4,18,Monthly,Card,West,4,1,68.8,1
+2480,26,228.79,55,1,28,Annual,Bank Transfer,North,1,1,6.2,1
+2481,39,208.49,36,7,24,Annual,Card,East,1,1,78.6,0
+2482,29,103.38,26,0,9,Monthly,Card,South,4,1,92.2,1
+2483,33,132.94,49,6,26,Monthly,Bank Transfer,North,4,0,5.1,0
+2484,29,393.2,29,4,39,Annual,UPI,South,5,0,11.5,1
+2485,60,262.94,10,5,9,Annual,Card,West,3,1,78.3,1
+2486,50,74.66,56,4,8,Monthly,Card,East,4,0,14.9,0
+2487,43,312.23,46,2,40,Annual,Bank Transfer,East,2,1,66.7,1
+2488,56,41.33,44,1,13,Monthly,Wallet,East,3,1,88.3,1
+2489,21,103.77,9,4,23,Monthly,UPI,South,3,1,70.8,1
+2490,28,78.01,68,8,29,Monthly,UPI,West,5,1,24.2,1
+2491,62,102.91,7,8,23,Monthly,Card,South,5,0,10.4,1
+2492,26,148.61,62,8,26,Annual,Card,West,2,0,90.1,0
+2493,61,114.65,43,7,3,Monthly,Card,South,4,0,17.9,1
+2494,37,120.3,52,0,3,Monthly,UPI,North,2,0,9.9,0
+2495,22,103.73,22,4,6,Quarterly,Wallet,South,1,1,75.9,0
+2496,57,130.49,55,3,13,Monthly,Card,West,5,0,16.6,1
+2497,32,111.15,18,0,6,Quarterly,Card,West,5,0,81.5,1
+2498,62,99.66,15,3,10,Monthly,Card,West,2,1,35.2,1
+2499,40,194.48,23,4,37,Quarterly,Card,North,5,1,43.6,1
+2500,50,111.88,36,8,40,Quarterly,Bank Transfer,South,3,0,61.0,0
