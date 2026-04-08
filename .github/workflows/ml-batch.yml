@@ -68,11 +68,10 @@ jobs:
         run: |
           test -f models/model.pkl
 
-      - name: Prepare demo input file
+      - name: Ensure input file exists
         run: |
-          mkdir -p input
-          cp input/input_data.csv input/input_data.csv
-
+          ls -l input
+          test -f input/input_data.csv
 
       - name: Build Docker image
         run: |
