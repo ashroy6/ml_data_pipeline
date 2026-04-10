@@ -8,6 +8,10 @@ This project trains a churn prediction model, performs batch inference on new in
 
 ---
 
+## Architecture Diagram
+
+![Architecture Diagram](image1.png)
+
 ## Why this project matters
 
 Most beginner ML projects stop at model training.
