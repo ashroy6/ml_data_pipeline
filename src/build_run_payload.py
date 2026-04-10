@@ -29,6 +29,7 @@ def build_missing_test_results() -> dict:
         "tests_run": 0,
         "tests_passed": 0,
         "tests_failed": 0,
+        "tests_skipped": 0,
         "note": "Real pytest report not found. Run pytest with --json-report to generate artifacts/test_results.json.",
     }
 
@@ -37,7 +38,6 @@ def normalize_test_results(test_results: dict) -> dict:
     if not isinstance(test_results, dict) or not test_results:
         return build_missing_test_results()
 
-    # Handle pytest-json-report structure
     summary = test_results.get("summary", {})
     if isinstance(summary, dict):
         total = int(summary.get("total", 0) or 0)
@@ -66,9 +66,11 @@ def normalize_test_results(test_results: dict) -> dict:
             if "duration" in test_results:
                 normalized["duration"] = test_results["duration"]
 
+            if "exitcode" in test_results:
+                normalized["exitcode"] = test_results["exitcode"]
+
             return normalized
 
-    # If already in normalized custom format, keep it
     if {"status", "tests_run", "tests_passed", "tests_failed"}.issubset(test_results.keys()):
         return test_results
 
@@ -80,7 +82,6 @@ def main() -> None:
 
     metrics = read_json(ARTIFACTS_DIR / "metrics.json", {})
     predictions_summary = read_json(ARTIFACTS_DIR / "predictions_summary.json", {})
-
     raw_test_results = read_json(TEST_RESULTS_FILE, {})
     test_results = normalize_test_results(raw_test_results)
 
