@@ -13,5 +13,8 @@ predictions.db
 
 models/*.pkl
 
+artifacts/
+vectorstore/
+
 .DS_Store
 Thumbs.db
