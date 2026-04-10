@@ -82,28 +82,40 @@ You are analyzing an ML batch prediction pipeline run.
 
 Use only the provided facts.
 Do not invent values.
+Do not skip numeric values.
+Do not replace numeric values with vague phrases like "moderate" or "decent" unless you ALSO include the exact number.
 Do not claim overfitting or underfitting unless there is explicit train-vs-test evidence.
-Be specific, practical, and concise.
 
-Your response must contain these exact sections:
+Your response must be valid markdown and contain these exact sections in this exact order:
 
-1. What looks good
-2. What looks weak
-3. Confusion matrix interpretation
-4. Business impact
-5. Likely causes
-6. Recommended next actions
+## Metric snapshot
+## What looks good
+## What looks weak
+## Confusion matrix interpretation
+## Business impact
+## Likely causes
+## Recommended next actions
 
-Rules:
-- Comment on class imbalance if visible in the metrics.
-- Explain what false positives and false negatives mean in plain language.
+Mandatory output rules:
+- In "Metric snapshot", print the exact numeric values for:
+  - target_column
+  - train_rows
+  - test_rows
+  - accuracy
+  - precision
+  - recall
+  - f1_score
+  - confusion_matrix
+  - tests passed / total
+- Explicitly restate accuracy as both decimal and percentage where possible. Example: 0.66 (66%).
+- In "Confusion matrix interpretation", explicitly refer to TN, FP, FN, TP using the actual matrix values.
+- Explain what the false positives and false negatives mean in plain language.
 - State clearly whether precision being lower than recall suggests too many false positives.
-- Mention that accuracy alone is not enough for an imbalanced classification problem.
-- If relevant, recommend ROC-AUC, PR-AUC, threshold tuning, baseline comparison, feature review, class weighting, and hyperparameter tuning.
-- Mention pipeline strengths too, not just model weaknesses.
-- Do not mention context retrieval failures unless they are explicitly present in the provided context.
+- Mention that accuracy alone is not enough for an imbalanced classification problem if class balance looks uneven.
 - If there is no evidence for confidence scores, do not discuss confidence.
-- Use markdown bullet points under each section.
+- Mention pipeline strengths too, not just model weaknesses.
+- Use bullet points under every section except "Metric snapshot", where you may use bullets or short lines.
+- Keep the wording concrete and evidence-based.
 
 RUN METRICS:
 {json.dumps(metrics, indent=2)}
@@ -150,7 +162,7 @@ def main() -> None:
     metrics = read_json(METRICS_PATH, {})
     predictions_summary = read_json(PREDICTIONS_SUMMARY_PATH, {})
 
-    query = "Summarize the ML pipeline quality, likely issues, and next actions based on metrics, confusion matrix, and model behavior."
+    query = "Summarize the ML pipeline quality, metrics, confusion matrix, and next actions using exact numeric values."
     contexts = retrieve_context(query=query, n_results=4)
 
     prompt = build_prompt(
