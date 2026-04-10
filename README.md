@@ -1,229 +1,238 @@
-# Project 1: Batch Prediction Pipeline
+# ML Batch Prediction Pipeline with AI Analysis
 
-A production-style batch machine learning pipeline built locally with Python, Pandas, scikit-learn, Docker, and GitHub Actions.
+Built an end-to-end batch ML pipeline using Python, scikit-learn, Docker, and GitHub Actions, extended with automated evaluation, real pytest-based validation, and AI-powered post-run analysis using Ollama and ChromaDB RAG.
 
-This project simulates how companies run ML in batch mode.
+A portfolio project that combines a production-style batch machine learning pipeline with post-run AI analysis.
 
-Instead of serving live predictions through an API, the system:
-
-- trains a model on historical labeled data
-- waits for a new input CSV file
-- processes the file in batch
-- generates predictions
-- saves results for downstream use
-- archives processed input files
-
----
-
-## What this project does
-
-This pipeline solves a simple business-style ML problem using batch prediction.
-
-### Example flow
-
-1. Historical labeled data is used to train a model
-2. The trained model is saved as `model.pkl`
-3. A new CSV file is dropped into the input folder
-4. The batch job reads that file
-5. The model generates predictions
-6. Predictions are written to an output CSV
-7. The input file is moved to archive
-
-This is close to how many real ML batch systems work in companies.
+This project trains a churn prediction model, performs batch inference on new input data, evaluates model performance, runs automated tests, and generates an AI-written analysis report using Ollama and ChromaDB-based RAG.
 
 ---
 
 ## Why this project matters
 
-This project helps demonstrate practical ML engineering skills, not just notebook-based model training.
+Most beginner ML projects stop at model training.
 
-It shows:
+This project goes further and shows the surrounding engineering work that companies actually care about:
 
-- training vs inference separation
-- model artifact handling
-- folder-based batch ingestion
-- repeatable pipeline runs
+- batch ML pipeline design
+- model persistence and reuse
 - Docker-based execution
-- CI/CD with GitHub Actions
-- production-style project structure
+- GitHub Actions CI/CD automation
+- structured evaluation artifacts
+- real pytest-based validation
+- AI-assisted post-run analysis
+- local RAG pipeline using Ollama + ChromaDB
 
 ---
 
-## End-to-end pipeline flow
+## What it does
 
-### Training flow
+### P1 capabilities
+- trains a churn prediction model from historical labeled CSV data
+- saves the trained model as a reusable artifact
+- loads new batch input data
+- generates predictions in batch mode
+- saves prediction outputs and logs
 
-- Read `training_data.csv`
-- Clean and preprocess data
-- Split data into train and test sets
-- Train a machine learning model
-- Evaluate the model
-- Save trained artifact as `models/model.pkl`
-
-### Prediction flow
-
-- Watch for a new input CSV in the raw/input folder
-- Load `models/model.pkl`
-- Apply the same preprocessing logic
-- Predict outcomes for new rows
-- Save output into predictions folder
-- Move processed input file into archive
-
-## Main components
-
-### 1. `train.py`
-
-Responsible for:
-
-- loading historical labeled data
-- preprocessing features
-- training the ML model
-- evaluating the model
-- saving the trained model artifact
-
-**Output:**
-
-- `models/model.pkl`
-
-### 2. `predict.py`
-
-Responsible for:
-
-- loading new batch input data
-- loading the saved model
-- generating predictions
-- saving prediction output
-- archiving processed input files
-
-**Outputs:**
-
-- `data/processed/predictions.csv`
-- archived input files in `archive/`
-
-### 3. `Dockerfile`
-
-Used to package the pipeline into a container so it runs the same way everywhere.
-
-This is useful because:
-
-- local machine behavior becomes consistent
-- GitHub Actions can run the same image
-- dependency issues are reduced
-
-### 4. GitHub Actions workflow
-
-Used to automate the batch pipeline in CI/CD.
-
-It can:
-
-- build the Docker image
-- run training
-- run prediction
-- upload artifacts like trained model and reports
+### P3 capabilities
+- evaluates model performance on the held-out test split
+- creates structured metrics artifacts
+- runs real pytest tests and exports machine-readable test results
+- builds a local vector store from project knowledge files
+- retrieves relevant RAG context for analysis
+- uses Ollama to generate a human-readable summary of the run
+- packages all outputs into final analysis artifacts
 
 ---
+
+## Data Stack
+
+### Files
+
+#### 1. `training_data.csv`
+- 1500 labeled rows
+- Use this to train and test a churn prediction model
+- Target column: `churn`
+  - `1` = churned
+  - `0` = retained
+
+#### 2. `input_data.csv`
+- 300 unlabeled rows
+- Use this as new incoming batch data for inference
+- This file does not contain the `churn` column because the model should predict it
+
+---
+
+### Columns
+
+- `customer_id`: unique customer identifier
+- `age`: customer age
+- `monthly_spend`: current recurring spend
+- `tenure_months`: months as a customer
+- `support_tickets`: number of support tickets raised
+- `last_login_days`: days since last login
+- `contract_type`: Monthly, Quarterly, or Annual
+- `payment_method`: Card, Bank Transfer, UPI, or Wallet
+- `region`: customer region
+- `num_products`: number of subscribed products
+- `discount_used`: `1` if discount applied, else `0`
+- `avg_session_minutes`: average session length
+
+---
+
+### Suggested local folders
+
+- `data/training_data.csv`
+- `input/input_data.csv`
+
 
 ## Tech stack
 
-- **Python**
-- **Pandas**
-- **scikit-learn**
-- **joblib / pickle**
-- **Docker**
-- **GitHub Actions**
+- Python
+- pandas
+- scikit-learn
+- joblib
+- pytest
+- pytest-json-report
+- Docker
+- GitHub Actions
+- Ollama
+- ChromaDB
 
 ---
 
-## Optional future upgrades
+## End-to-end flow
 
-- SQLite or Postgres
-- Prefect or Airflow
-- AWS S3
-- AWS Lambda trigger
-- MLflow
-- monitoring and alerts
+```text
+training_data.csv
+    ↓
+train.py
+    ↓
+model.pkl
+    ↓
+predict.py + input_data.csv
+    ↓
+predictions output
+    ↓
+evaluate.py
+    ↓
+metrics.json + predictions_summary.json
+    ↓
+pytest + p3_analyze.py
+    ↓
+test_results.json + llm_summary.md + llm_summary.json
+    ↓
+build_run_payload.py
+    ↓
+run_payload.json
 
-## High-level architecture
+```
 
-### Architecture diagram
+## Key outputs
 
-flowchart TD
-    A[training_data.csv<br/>Historical labeled data] --> B[train.py]
-    B --> C[Preprocessing]
-    C --> D[Model Training]
-    D --> E[model.pkl]
+After a successful run, the pipeline produces:
 
-    F[input_data.csv<br/>New unseen batch file] --> G[predict.py]
-    E --> G
-    G --> H[Preprocessing for inference]
-    H --> I[Generate predictions]
-    I --> J[predictions.csv]
-    G --> K[Move processed input to archive]
+- `models/model.pkl`  
+  Trained model artifact
 
-    J --> L[reports / outputs]
-    K --> M[archive folder]
+- `artifacts/metrics.json`  
+  Structured evaluation metrics
 
-    ## Key concepts demonstrated
+- `artifacts/predictions_summary.json`  
+  Summary of the latest prediction batch
 
-### 1. Training vs inference
+- `artifacts/test_results.json`  
+  Real pytest JSON report
 
-These are separate steps.
+- `artifacts/llm_summary.md`  
+  Human-readable AI analysis
 
-- training builds the model
-- inference uses the saved model on new data
+- `artifacts/llm_summary.json`  
+  Machine-readable LLM output with context and prompt details
 
-This is a core production ML concept.
+- `artifacts/run_payload.json`  
+  Final combined payload for downstream review
 
-### 2. Model artifact management
+## Example engineering value
 
-The trained model is saved and reused later.
+This project demonstrates how to move from “I trained a model” to “I built an ML workflow.”
 
-This simulates how real ML systems store models for deployment.
+It shows:
 
-### 3. Batch processing
+- repeatable ML execution
+- containerized pipeline stages
+- branch-based safe development
+- CI/CD integration
+- metrics consistency checks
+- real test-report generation
+- AI-generated operational summaries
+- artifact-driven reporting
 
-The system works on files in chunks or batches, not one request at a time.
+## What I built and debugged
 
-This is common in enterprise ML.
+During development, the project required fixing real pipeline issues, including:
 
-### 4. Reproducibility
+- inconsistent evaluation logic between training and evaluation
+- missing files in GitHub Actions branches
+- broken dependency installation in Docker
+- placeholder test result artifacts replaced with real pytest output
+- missing LLM summary generation in CI
+- incorrect prediction summary column detection
+- RAG retrieval integration issues
+- metric interpretation errors in generated summaries
 
-Docker makes the pipeline consistent across machines and CI/CD environments.
 
-### 5. Automation
+## GitHub Actions workflow
 
-GitHub Actions simulates a real CI/CD pipeline for ML workflows.
+The GitHub Actions pipeline includes three jobs:
+
+### Train
+- builds the Docker image
+- trains the model
+- uploads the trained model artifact
+
+### Predict
+- downloads the trained model
+- runs batch prediction
+- uploads prediction outputs and logs
+
+### Analyze
+- installs Python dependencies
+- installs and starts Ollama
+- evaluates the model
+- runs pytest and exports the test report
+- ingests the RAG knowledge base
+- generates the AI summary
+- uploads analysis artifacts
 
 ---
 
-## Limitations of current version
+## Current status
 
-This is a learning project, so it is intentionally simple.
+This project is now working end to end for both local runs and CI runs.
 
-### Current limitations
+It is a strong portfolio project because it combines:
 
-- no model registry
-- no feature store
-- no drift monitoring
-- no experiment tracking
-- no scheduler built into the project
-- no cloud storage integration yet
-- no alerting
+- machine learning
+- automation
+- testing
+- CI/CD
+- LLM integration
+- RAG integration
+- debugging and iteration
 
 ---
 
-## Future improvements
+## Current limitations
 
-Good next upgrades:
+This is still a portfolio project, not a production platform.
 
-- add logging
-- add input validation
-- add model evaluation report
-- add unit tests
-- add Makefile
-- add scheduler
-- replace local folders with S3
-- trigger prediction automatically when a new file arrives
-- store outputs in SQLite or Postgres
-- add MLflow for experiment tracking
-- add monitoring for failed batch jobs
+Known limitations include:
+
+- model quality is moderate
+- test coverage is minimal
+- no experiment tracking system yet
+- no cloud deployment yet
+- no monitoring dashboard yet
+- no drift detection yet
+- no scheduled retraining yet
