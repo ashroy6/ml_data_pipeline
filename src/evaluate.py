@@ -3,7 +3,13 @@ from pathlib import Path
 
 import pandas as pd
 from joblib import load
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
+from sklearn.metrics import (
+    accuracy_score,
+    confusion_matrix,
+    f1_score,
+    precision_score,
+    recall_score,
+)
 from sklearn.model_selection import train_test_split
 
 
@@ -91,15 +97,18 @@ def main() -> None:
         raise ValueError("Training data is empty.")
 
     target_col = infer_target_column(df)
-    X = df.drop(columns=[target_col])
+    drop_columns = ["customer_id"]
+    existing_drop_columns = [col for col in drop_columns if col in df.columns]
+
+    X = df.drop(columns=[target_col] + existing_drop_columns)
     y = df[target_col]
 
+    # Must match train.py exactly
     X_train, X_test, y_train, y_test = train_test_split(
         X,
         y,
         test_size=0.2,
         random_state=42,
-        stratify=y if y.nunique() > 1 else None,
     )
 
     model = load(MODEL_PATH)
@@ -110,6 +119,7 @@ def main() -> None:
 
     metrics = {
         "target_column": target_col,
+        "dropped_columns": existing_drop_columns,
         "train_rows": int(len(X_train)),
         "test_rows": int(len(X_test)),
         "accuracy": round(float(accuracy_score(y_test, y_pred)), 4),
