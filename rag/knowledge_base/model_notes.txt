@@ -1,0 +1,7 @@
+Model notes:
+- The trained model is stored at models/model.pkl.
+- Evaluation should focus on accuracy, precision, recall, and F1 score.
+- Low recall can mean the model is missing true positives.
+- Low precision can mean too many false positives.
+- If accuracy is high but recall is weak, class imbalance may be hiding poor minority-class performance.
+- Recommendations should prefer practical ML actions such as checking class balance, improving input features, reviewing label quality, and tuning thresholds or hyperparameters.

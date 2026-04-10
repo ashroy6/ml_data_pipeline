@@ -1,0 +1,19 @@
+Project 1 is a batch prediction pipeline.
+
+Purpose:
+- Train a machine learning model from labeled historical data.
+- Run batch predictions on new input data.
+- Save prediction outputs to CSV files.
+- Archive processed input files.
+- Support repeatable execution through Docker and GitHub Actions.
+
+Key folders:
+- data/raw: training data
+- input: incoming batch file for prediction
+- output: generated prediction CSV files
+- models: trained model artifact
+- logs: prediction logs
+- archive: processed input files moved after successful prediction
+
+P3 adds an AI analysis layer on top of P1.
+The goal is to read run artifacts, summarize results, explain metrics, and suggest next actions.

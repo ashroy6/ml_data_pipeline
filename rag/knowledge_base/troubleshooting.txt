@@ -1,0 +1,7 @@
+Troubleshooting guide:
+- If model metrics drop sharply, inspect data quality and schema consistency first.
+- If recall is poor, review class imbalance, threshold choice, and minority-class coverage.
+- If precision is poor, inspect noisy features and false-positive patterns.
+- If prediction output volume looks unusual, verify the latest input file and batch size.
+- If tests fail or artifacts are missing, check path handling, file names, and workflow step order.
+- Keep recommendations concrete and limited. Do not suggest full retraining from scratch unless the evidence is strong.
