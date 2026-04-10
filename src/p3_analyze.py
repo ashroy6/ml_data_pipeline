@@ -1,101 +1,80 @@
 import json
-import os
+import subprocess
+import sys
 from pathlib import Path
-
-import ollama
-
-from retrieve_context import retrieve_context
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 ARTIFACTS_DIR = PROJECT_ROOT / "artifacts"
+TEST_RESULTS_PATH = ARTIFACTS_DIR / "test_results.json"
+RUN_PAYLOAD_PATH = ARTIFACTS_DIR / "run_payload.json"
 
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2:3b")
 
+def run_pytest() -> dict:
+    cmd = [
+        sys.executable,
+        "-m",
+        "pytest",
+        "tests",
+        "--json-report",
+        f"--json-report-file={TEST_RESULTS_PATH}",
+    ]
 
-def build_query(payload: dict) -> str:
-    metrics = payload.get("metrics", {})
-    test_results = payload.get("test_results", {})
-    predictions_summary = payload.get("predictions_summary", {})
-
-    return (
-        "Analyze this ML batch pipeline run. "
-        f"Accuracy={metrics.get('accuracy')}, "
-        f"Precision={metrics.get('precision')}, "
-        f"Recall={metrics.get('recall')}, "
-        f"F1={metrics.get('f1_score')}, "
-        f"Tests status={test_results.get('status')}, "
-        f"Total predictions={predictions_summary.get('total_predictions')}. "
-        "Use project notes and troubleshooting guidance if relevant."
+    result = subprocess.run(
+        cmd,
+        cwd=PROJECT_ROOT,
+        capture_output=True,
+        text=True,
     )
 
+    return {
+        "command": " ".join(cmd),
+        "returncode": result.returncode,
+        "stdout": result.stdout,
+        "stderr": result.stderr,
+        "report_file": str(TEST_RESULTS_PATH),
+    }
 
-def build_prompt(payload: dict, rag_items: list[dict]) -> str:
-    context_text = "\n\n".join(
-        [
-            f"[Source: {item['source']} | Chunk: {item['chunk_index']}]\n{item['content']}"
-            for item in rag_items
-        ]
-    )
 
-    return f"""
-You are analyzing a batch ML pipeline run.
-
-Rules:
-1. Base your answer on the run payload and retrieved project context.
-2. Be specific and practical.
-3. Do not invent metrics that are not present.
-4. Give:
-   - concise summary
-   - what looks good
-   - what looks weak
-   - likely causes
-   - 3 practical recommendations
-5. Keep the answer readable for a hiring manager and an engineer.
-
-RUN PAYLOAD:
-{json.dumps(payload, indent=2)}
-
-RETRIEVED PROJECT CONTEXT:
-{context_text if context_text else "No additional context retrieved."}
-""".strip()
+def build_run_payload(pytest_result: dict) -> dict:
+    payload = {
+        "project_root": str(PROJECT_ROOT),
+        "artifacts_dir": str(ARTIFACTS_DIR),
+        "pytest": pytest_result,
+        "files_present": {
+            "metrics_json": (ARTIFACTS_DIR / "metrics.json").exists(),
+            "predictions_summary_json": (ARTIFACTS_DIR / "predictions_summary.json").exists(),
+            "test_results_json": TEST_RESULTS_PATH.exists(),
+            "llm_summary_json": (ARTIFACTS_DIR / "llm_summary.json").exists(),
+            "llm_summary_md": (ARTIFACTS_DIR / "llm_summary.md").exists(),
+        },
+    }
+    return payload
 
 
 def main() -> None:
-    payload_file = ARTIFACTS_DIR / "run_payload.json"
-    if not payload_file.exists():
-        raise FileNotFoundError(f"Missing run payload: {payload_file}")
+    ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
 
-    payload = json.loads(payload_file.read_text(encoding="utf-8"))
-    rag_items = retrieve_context(build_query(payload), top_k=4)
-    prompt = build_prompt(payload, rag_items)
+    pytest_result = run_pytest()
 
-    response = ollama.chat(
-        model=OLLAMA_MODEL,
-        messages=[
-            {
-                "role": "user",
-                "content": prompt,
-            }
-        ],
-    )
+    payload = build_run_payload(pytest_result)
+    with RUN_PAYLOAD_PATH.open("w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2)
 
-    analysis_text = response["message"]["content"].strip()
+    print(f"Saved run payload to {RUN_PAYLOAD_PATH}")
+    print(f"Pytest report path: {TEST_RESULTS_PATH}")
 
-    md_file = ARTIFACTS_DIR / "llm_summary.md"
-    json_file = ARTIFACTS_DIR / "llm_summary.json"
+    if pytest_result["stdout"]:
+        print("\nPytest stdout:\n")
+        print(pytest_result["stdout"])
 
-    md_file.write_text(analysis_text + "\n", encoding="utf-8")
+    if pytest_result["stderr"]:
+        print("\nPytest stderr:\n")
+        print(pytest_result["stderr"])
 
-    output = {
-        "model": OLLAMA_MODEL,
-        "analysis": analysis_text,
-        "sources_used": rag_items,
-    }
-    json_file.write_text(json.dumps(output, indent=2), encoding="utf-8")
-
-    print(f"Saved {md_file}")
-    print(f"Saved {json_file}")
+    if pytest_result["returncode"] != 0:
+        print("\nPytest reported failures.")
+        sys.exit(pytest_result["returncode"])
 
 
 if __name__ == "__main__":
