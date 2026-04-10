@@ -1,3 +1,4 @@
+cat > src/retrieve_context.py <<'EOF'
 from pathlib import Path
 
 import chromadb
@@ -11,7 +12,7 @@ COLLECTION_NAME = "project1_rag"
 EMBED_MODEL = "nomic-embed-text"
 
 
-def retrieve_context(query: str, top_k: int = 4) -> list[dict]:
+def retrieve_relevant_context(query: str, n_results: int = 4) -> list[dict]:
     client = chromadb.PersistentClient(path=str(VECTORSTORE_DIR))
     embed_fn = embedding_functions.OllamaEmbeddingFunction(
         url="http://127.0.0.1:11434/api/embeddings",
@@ -25,7 +26,7 @@ def retrieve_context(query: str, top_k: int = 4) -> list[dict]:
 
     result = collection.query(
         query_texts=[query],
-        n_results=top_k,
+        n_results=n_results,
     )
 
     documents = result.get("documents", [[]])[0]
@@ -33,11 +34,18 @@ def retrieve_context(query: str, top_k: int = 4) -> list[dict]:
 
     items = []
     for doc, meta in zip(documents, metadatas):
+        meta = meta or {}
         items.append(
             {
                 "source": meta.get("source", "unknown"),
                 "chunk_index": meta.get("chunk_index", -1),
-                "content": doc,
+                "text": doc,
             }
         )
+
     return items
+
+
+def retrieve_context(query: str, top_k: int = 4) -> list[dict]:
+    return retrieve_relevant_context(query=query, n_results=top_k)
+EOF
