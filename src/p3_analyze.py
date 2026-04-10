@@ -80,13 +80,30 @@ def build_prompt(metrics: dict, predictions_summary: dict, test_summary: dict, c
     return f"""
 You are analyzing an ML batch prediction pipeline run.
 
-Return:
-1. A section called "What looks good"
-2. A section called "What looks weak"
-3. A section called "Likely causes"
-4. A section called "Recommended next actions"
+Use only the provided facts.
+Do not invent values.
+Do not claim overfitting or underfitting unless there is explicit train-vs-test evidence.
+Be specific, practical, and concise.
 
-Be concrete. Use only the facts provided. Do not invent values.
+Your response must contain these exact sections:
+
+1. What looks good
+2. What looks weak
+3. Confusion matrix interpretation
+4. Business impact
+5. Likely causes
+6. Recommended next actions
+
+Rules:
+- Comment on class imbalance if visible in the metrics.
+- Explain what false positives and false negatives mean in plain language.
+- State clearly whether precision being lower than recall suggests too many false positives.
+- Mention that accuracy alone is not enough for an imbalanced classification problem.
+- If relevant, recommend ROC-AUC, PR-AUC, threshold tuning, baseline comparison, feature review, class weighting, and hyperparameter tuning.
+- Mention pipeline strengths too, not just model weaknesses.
+- Do not mention context retrieval failures unless they are explicitly present in the provided context.
+- If there is no evidence for confidence scores, do not discuss confidence.
+- Use markdown bullet points under each section.
 
 RUN METRICS:
 {json.dumps(metrics, indent=2)}
@@ -133,7 +150,7 @@ def main() -> None:
     metrics = read_json(METRICS_PATH, {})
     predictions_summary = read_json(PREDICTIONS_SUMMARY_PATH, {})
 
-    query = "Summarize the ML pipeline quality, likely issues, and next actions based on metrics and model behavior."
+    query = "Summarize the ML pipeline quality, likely issues, and next actions based on metrics, confusion matrix, and model behavior."
     contexts = retrieve_context(query=query, n_results=4)
 
     prompt = build_prompt(
