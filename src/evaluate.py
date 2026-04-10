@@ -62,13 +62,46 @@ def summarize_predictions(latest_prediction_file: Path | None) -> dict:
         return summary
 
     prediction_col = None
-    for col in ["prediction", "predicted", "predictions", "y_pred"]:
+
+    preferred_columns = [
+        "prediction",
+        "predicted",
+        "predictions",
+        "y_pred",
+        "predicted_churn",
+    ]
+
+    for col in preferred_columns:
         if col in df.columns:
             prediction_col = col
             break
 
     if prediction_col is None:
-        prediction_col = df.columns[-1]
+        for col in df.columns:
+            col_lower = col.lower()
+            if (
+                "predict" in col_lower
+                and "timestamp" not in col_lower
+                and "time" not in col_lower
+                and "date" not in col_lower
+                and "probability" not in col_lower
+                and "score" not in col_lower
+            ):
+                prediction_col = col
+                break
+
+    if prediction_col is None:
+        non_metadata_cols = [
+            col
+            for col in df.columns
+            if "timestamp" not in col.lower()
+            and "time" not in col.lower()
+            and "date" not in col.lower()
+        ]
+        if non_metadata_cols:
+            prediction_col = non_metadata_cols[-1]
+        else:
+            prediction_col = df.columns[-1]
 
     distribution = df[prediction_col].astype(str).value_counts(dropna=False).to_dict()
 
@@ -100,10 +133,10 @@ def main() -> None:
     drop_columns = ["customer_id"]
     existing_drop_columns = [col for col in drop_columns if col in df.columns]
 
+    # Must match train.py exactly
     X = df.drop(columns=[target_col] + existing_drop_columns)
     y = df[target_col]
 
-    # Must match train.py exactly
     X_train, X_test, y_train, y_test = train_test_split(
         X,
         y,
@@ -123,9 +156,18 @@ def main() -> None:
         "train_rows": int(len(X_train)),
         "test_rows": int(len(X_test)),
         "accuracy": round(float(accuracy_score(y_test, y_pred)), 4),
-        "precision": round(float(precision_score(y_test, y_pred, average="weighted", zero_division=0)), 4),
-        "recall": round(float(recall_score(y_test, y_pred, average="weighted", zero_division=0)), 4),
-        "f1_score": round(float(f1_score(y_test, y_pred, average="weighted", zero_division=0)), 4),
+        "precision": round(
+            float(precision_score(y_test, y_pred, average="weighted", zero_division=0)),
+            4,
+        ),
+        "recall": round(
+            float(recall_score(y_test, y_pred, average="weighted", zero_division=0)),
+            4,
+        ),
+        "f1_score": round(
+            float(f1_score(y_test, y_pred, average="weighted", zero_division=0)),
+            4,
+        ),
         "confusion_matrix": cm.tolist(),
         "class_labels": sorted([str(v) for v in pd.Series(y).dropna().unique().tolist()]),
         "predictions_summary": prediction_summary,
