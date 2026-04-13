@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 
 import chromadb
 from chromadb.utils import embedding_functions
@@ -9,7 +10,8 @@ KB_DIR = PROJECT_ROOT / "rag" / "knowledge_base"
 VECTORSTORE_DIR = PROJECT_ROOT / "vectorstore"
 
 COLLECTION_NAME = "project1_rag"
-EMBED_MODEL = "nomic-embed-text"
+EMBED_MODEL = os.getenv("EMBED_MODEL", "nomic-embed-text")
+OLLAMA_EMBED_URL = os.getenv("OLLAMA_EMBED_URL", "http://ollama:11434/api/embeddings")
 
 
 def chunk_text(text: str, chunk_size: int = 800, overlap: int = 120) -> list[str]:
@@ -34,7 +36,7 @@ def main() -> None:
 
     client = chromadb.PersistentClient(path=str(VECTORSTORE_DIR))
     embed_fn = embedding_functions.OllamaEmbeddingFunction(
-        url="http://127.0.0.1:11434/api/embeddings",
+        url=OLLAMA_EMBED_URL,
         model_name=EMBED_MODEL,
     )
 

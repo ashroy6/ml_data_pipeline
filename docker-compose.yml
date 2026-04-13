@@ -1,0 +1,29 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: project1_app
+    working_dir: /app
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+      OLLAMA_EMBED_URL: http://ollama:11434/api/embeddings
+      OLLAMA_MODEL: llama3.2:3b
+      EMBED_MODEL: nomic-embed-text
+    volumes:
+      - ./:/app
+    depends_on:
+      - ollama
+    tty: true
+    stdin_open: true
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: project1_ollama
+    volumes:
+      - ollama_data:/root/.ollama
+    tty: true
+    stdin_open: true
+
+volumes:
+  ollama_data:

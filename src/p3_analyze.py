@@ -4,7 +4,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-import ollama
+from ollama import Client
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -16,6 +16,7 @@ LLM_SUMMARY_JSON_PATH = ARTIFACTS_DIR / "llm_summary.json"
 LLM_SUMMARY_MD_PATH = ARTIFACTS_DIR / "llm_summary.md"
 
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2:3b")
+OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://ollama:11434")
 
 
 def read_json(path: Path, default):
@@ -132,7 +133,8 @@ RAG CONTEXT:
 
 
 def call_llm(prompt: str) -> str:
-    response = ollama.chat(
+    client = Client(host=OLLAMA_HOST)
+    response = client.chat(
         model=OLLAMA_MODEL,
         messages=[
             {
@@ -176,6 +178,7 @@ def main() -> None:
 
     llm_summary = {
         "model": OLLAMA_MODEL,
+        "ollama_host": OLLAMA_HOST,
         "prompt": prompt,
         "summary_markdown": llm_text,
         "metrics_snapshot": metrics,

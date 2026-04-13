@@ -1,5 +1,5 @@
-cat > src/retrieve_context.py <<'EOF'
 from pathlib import Path
+import os
 
 import chromadb
 from chromadb.utils import embedding_functions
@@ -9,13 +9,14 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 VECTORSTORE_DIR = PROJECT_ROOT / "vectorstore"
 
 COLLECTION_NAME = "project1_rag"
-EMBED_MODEL = "nomic-embed-text"
+EMBED_MODEL = os.getenv("EMBED_MODEL", "nomic-embed-text")
+OLLAMA_EMBED_URL = os.getenv("OLLAMA_EMBED_URL", "http://ollama:11434/api/embeddings")
 
 
 def retrieve_relevant_context(query: str, n_results: int = 4) -> list[dict]:
     client = chromadb.PersistentClient(path=str(VECTORSTORE_DIR))
     embed_fn = embedding_functions.OllamaEmbeddingFunction(
-        url="http://127.0.0.1:11434/api/embeddings",
+        url=OLLAMA_EMBED_URL,
         model_name=EMBED_MODEL,
     )
 
@@ -48,4 +49,3 @@ def retrieve_relevant_context(query: str, n_results: int = 4) -> list[dict]:
 
 def retrieve_context(query: str, top_k: int = 4) -> list[dict]:
     return retrieve_relevant_context(query=query, n_results=top_k)
-EOF
