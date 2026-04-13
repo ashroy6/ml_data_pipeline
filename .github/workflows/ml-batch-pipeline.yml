@@ -135,6 +135,7 @@ jobs:
           test -f data/raw/training_data.csv
           ls -R output || true
           ls -R logs || true
+          ls -R rag || true
 
       - name: Install Python dependencies
         run: |
@@ -143,7 +144,7 @@ jobs:
 
       - name: Start Ollama container
         run: |
-          docker compose up -d ollama
+          docker compose -f docker-compose.yml -f docker-compose.ci.yml up -d ollama
 
       - name: Wait for Ollama
         run: |
@@ -156,13 +157,13 @@ jobs:
             sleep 2
           done
           echo "Ollama did not become ready in time"
-          docker compose logs ollama || true
+          docker compose -f docker-compose.yml -f docker-compose.ci.yml logs ollama || true
           exit 1
 
       - name: Pull Ollama models
         run: |
-          docker compose exec -T ollama ollama pull llama3.2:3b
-          docker compose exec -T ollama ollama pull nomic-embed-text
+          docker compose -f docker-compose.yml -f docker-compose.ci.yml exec -T ollama ollama pull llama3.2:3b
+          docker compose -f docker-compose.yml -f docker-compose.ci.yml exec -T ollama ollama pull nomic-embed-text
 
       - name: Run evaluation
         run: |
@@ -205,9 +206,9 @@ jobs:
       - name: Show Ollama logs on failure
         if: failure()
         run: |
-          docker compose logs ollama || true
+          docker compose -f docker-compose.yml -f docker-compose.ci.yml logs ollama || true
 
       - name: Stop Ollama container
         if: always()
         run: |
-          docker compose down || true
+          docker compose -f docker-compose.yml -f docker-compose.ci.yml down || true
