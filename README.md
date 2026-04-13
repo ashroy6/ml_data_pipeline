@@ -1,10 +1,10 @@
 # ML Batch Prediction Pipeline with AI Analysis
 
-Built an end-to-end batch ML pipeline using Python, scikit-learn, Docker, and GitHub Actions, extended with automated evaluation, real pytest-based validation, and AI-powered post-run analysis using Ollama and ChromaDB RAG.
+Built an end-to-end batch ML pipeline using Python, scikit-learn, Docker, Docker Compose, and GitHub Actions, extended with automated evaluation, real pytest-based validation, input data validation, and AI-powered post-run analysis using Ollama and ChromaDB RAG.
 
-A portfolio project that combines a production-style batch machine learning pipeline with post-run AI analysis.
+A portfolio project that combines a production-style batch machine learning pipeline with post-run AI analysis and a data quality gate at the start of the workflow.
 
-This project trains a churn prediction model, performs batch inference on new input data, evaluates model performance, runs automated tests, and generates an AI-written analysis report using Ollama and ChromaDB-based RAG.
+This project trains a churn prediction model, validates incoming CSV data before processing, performs batch inference on new input data, evaluates model performance, runs automated tests, and generates an AI-written analysis report using Ollama and ChromaDB-based RAG.
 
 ---
 
@@ -21,11 +21,14 @@ This project goes further and shows the surrounding engineering work that compan
 - batch ML pipeline design
 - model persistence and reuse
 - Docker-based execution
+- multi-container local setup with Docker Compose
 - GitHub Actions CI/CD automation
 - structured evaluation artifacts
 - real pytest-based validation
+- input data validation before train and predict
 - AI-assisted post-run analysis
 - local RAG pipeline using Ollama + ChromaDB
+- branch-based safe development and iterative debugging
 
 ---
 
@@ -38,6 +41,13 @@ This project goes further and shows the surrounding engineering work that compan
 - generates predictions in batch mode
 - saves prediction outputs and logs
 
+### New validation layer
+- validates `training_data.csv` before training
+- validates `input_data.csv` before prediction
+- checks schema, required columns, numeric fields, nulls, duplicates, and target values
+- fails fast on critical data quality issues
+- writes machine-readable and human-readable validation reports
+
 ### P3 capabilities
 - evaluates model performance on the held-out test split
 - creates structured metrics artifacts
@@ -45,6 +55,7 @@ This project goes further and shows the surrounding engineering work that compan
 - builds a local vector store from project knowledge files
 - retrieves relevant RAG context for analysis
 - uses Ollama to generate a human-readable summary of the run
+- includes data validation results in the final AI summary
 - packages all outputs into final analysis artifacts
 
 ---
@@ -55,20 +66,21 @@ This project goes further and shows the surrounding engineering work that compan
 
 #### 1. `training_data.csv`
 - 1500 labeled rows
-- Use this to train and test a churn prediction model
-- Target column: `churn`
+- used to train and test a churn prediction model
+- target column: `churn`
   - `1` = churned
   - `0` = retained
 
 #### 2. `input_data.csv`
 - 300 unlabeled rows
-- Use this as new incoming batch data for inference
-- This file does not contain the `churn` column because the model should predict it
+- used as new incoming batch data for inference
+- this file does not contain the `churn` column because the model should predict it
 
 ---
 
 ### Columns
 
+#### Training data columns
 - `customer_id`: unique customer identifier
 - `age`: customer age
 - `monthly_spend`: current recurring spend
@@ -81,14 +93,51 @@ This project goes further and shows the surrounding engineering work that compan
 - `num_products`: number of subscribed products
 - `discount_used`: `1` if discount applied, else `0`
 - `avg_session_minutes`: average session length
+- `churn`: target label
+
+#### Prediction input columns
+- same as above except without `churn`
 
 ---
 
 ### Suggested local folders
 
-- `data/training_data.csv`
+- `data/raw/training_data.csv`
 - `input/input_data.csv`
 
+---
+
+## Data validation layer
+
+The pipeline now validates data before model execution begins.
+
+### Training validation checks
+- file exists and is not empty
+- CSV parses correctly
+- required training columns exist
+- `churn` target exists
+- numeric columns are numeric-compatible
+- mandatory columns are not null
+- duplicate rows are checked
+- duplicate `customer_id` values are checked
+- target values are limited to allowed values
+
+### Prediction validation checks
+- file exists and is not empty
+- CSV parses correctly
+- required prediction columns exist
+- numeric columns are numeric-compatible
+- mandatory columns are not null
+- duplicate rows are checked
+- duplicate `customer_id` values are checked
+
+### Validation outputs
+- `artifacts/data_validation_train.json`
+- `artifacts/data_validation_train.md`
+- `artifacts/data_validation_predict.json`
+- `artifacts/data_validation_predict.md`
+
+---
 
 ## Tech stack
 
@@ -99,6 +148,7 @@ This project goes further and shows the surrounding engineering work that compan
 - pytest
 - pytest-json-report
 - Docker
+- Docker Compose
 - GitHub Actions
 - Ollama
 - ChromaDB
@@ -110,11 +160,21 @@ This project goes further and shows the surrounding engineering work that compan
 ```text
 training_data.csv
     ↓
+validate_input.py --mode train
+    ↓
+data_validation_train.json + data_validation_train.md
+    ↓
 train.py
     ↓
 model.pkl
     ↓
-predict.py + input_data.csv
+input_data.csv
+    ↓
+validate_input.py --mode predict
+    ↓
+data_validation_predict.json + data_validation_predict.md
+    ↓
+predict.py
     ↓
 predictions output
     ↓
@@ -122,7 +182,7 @@ evaluate.py
     ↓
 metrics.json + predictions_summary.json
     ↓
-pytest + p3_analyze.py
+pytest + ingest_rag.py + p3_analyze.py
     ↓
 test_results.json + llm_summary.md + llm_summary.json
     ↓
@@ -132,30 +192,76 @@ run_payload.json
 
 ```
 
+## Container architecture
+
+This project now uses a split container design for local AI analysis.
+
+### App container
+
+Runs the Python project code:
+
+- validation
+- training
+- prediction
+- evaluation
+- RAG ingestion
+- AI analysis
+
+### Ollama container
+
+Runs the LLM and embedding models:
+
+- `llama3.2:3b`
+- `nomic-embed-text`
+
+### Compose files
+
+- `Dockerfile` builds the app image
+- `docker-compose.yml` orchestrates local multi-container execution
+- `docker-compose.ci.yml` applies CI-specific override settings
+
+This is closer to a production-style separation than running everything in one process.
+
+---
+
 ## Key outputs
 
 After a successful run, the pipeline produces:
 
 - `models/model.pkl`  
-  Trained model artifact
+  trained model artifact
+
+- `artifacts/data_validation_train.json`  
+  machine-readable training data validation report
+
+- `artifacts/data_validation_train.md`  
+  human-readable training data validation report
+
+- `artifacts/data_validation_predict.json`  
+  machine-readable prediction input validation report
+
+- `artifacts/data_validation_predict.md`  
+  human-readable prediction input validation report
 
 - `artifacts/metrics.json`  
-  Structured evaluation metrics
+  structured evaluation metrics
 
 - `artifacts/predictions_summary.json`  
-  Summary of the latest prediction batch
+  summary of the latest prediction batch
 
 - `artifacts/test_results.json`  
-  Real pytest JSON report
+  real pytest JSON report
 
 - `artifacts/llm_summary.md`  
-  Human-readable AI analysis
+  human-readable AI analysis including validation, test, and metric context
 
 - `artifacts/llm_summary.json`  
-  Machine-readable LLM output with context and prompt details
+  machine-readable LLM output with context, prompt details, and validation snapshots
 
 - `artifacts/run_payload.json`  
-  Final combined payload for downstream review
+  final combined payload for downstream review
+
+---
 
 ## Example engineering value
 
@@ -165,12 +271,16 @@ It shows:
 
 - repeatable ML execution
 - containerized pipeline stages
+- multi-container LLM integration
 - branch-based safe development
 - CI/CD integration
+- data quality validation before execution
 - metrics consistency checks
 - real test-report generation
 - AI-generated operational summaries
 - artifact-driven reporting
+
+---
 
 ## What I built and debugged
 
@@ -184,59 +294,51 @@ During development, the project required fixing real pipeline issues, including:
 - incorrect prediction summary column detection
 - RAG retrieval integration issues
 - metric interpretation errors in generated summaries
+- schema mismatch between validation rules and real CSV headers
+- workflow naming issues in GitHub Actions manual runs
+- Ollama container networking differences between local and CI execution
 
+---
 
 ## GitHub Actions workflow
 
-The GitHub Actions pipeline includes three jobs:
+The GitHub Actions ML pipeline includes three jobs:
 
 ### Train
+
+- installs dependencies
+- validates training data
+- uploads training validation reports
 - builds the Docker image
 - trains the model
 - uploads the trained model artifact
 
 ### Predict
+
+- installs dependencies
+- validates prediction input data
+- uploads prediction validation reports
 - downloads the trained model
 - runs batch prediction
 - uploads prediction outputs and logs
 
 ### Analyze
-- installs Python dependencies
-- installs and starts Ollama
+
+- downloads trained model and prediction outputs
+- starts Ollama in a container
+- pulls LLM and embedding models
 - evaluates the model
 - runs pytest and exports the test report
 - ingests the RAG knowledge base
-- generates the AI summary
+- generates the AI summary including validation results
 - uploads analysis artifacts
 
----
+## Results and Screeshots
 
-## Current status
+![Architecture Diagram](Actions_pipeline.png)
 
-This project is now working end to end for both local runs and CI runs.
+![Architecture Diagram](train.png)
 
-It is a strong portfolio project because it combines:
+![Architecture Diagram](OLLAMA_RAG.png)
 
-- machine learning
-- automation
-- testing
-- CI/CD
-- LLM integration
-- RAG integration
-- debugging and iteration
-
----
-
-## Current limitations
-
-This is still a portfolio project, not a production platform.
-
-Known limitations include:
-
-- model quality is moderate
-- test coverage is minimal
-- no experiment tracking system yet
-- no cloud deployment yet
-- no monitoring dashboard yet
-- no drift detection yet
-- no scheduled retraining yet
+![Architecture Diagram](LLM_SUMMARY.png)
