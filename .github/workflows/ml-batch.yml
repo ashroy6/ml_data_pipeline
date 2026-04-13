@@ -174,13 +174,28 @@ jobs:
           name: prediction-output
           path: .
 
+      - name: Download training validation artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: train-data-validation
+          path: artifacts
+
+      - name: Download prediction validation artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: predict-data-validation
+          path: artifacts
+
       - name: Verify required files exist
         run: |
           test -f models/model.pkl
           test -f data/raw/training_data.csv
+          test -f artifacts/data_validation_train.json
+          test -f artifacts/data_validation_predict.json
           ls -R output || true
           ls -R logs || true
           ls -R rag || true
+          ls -R artifacts || true
 
       - name: Install Python dependencies
         run: |
