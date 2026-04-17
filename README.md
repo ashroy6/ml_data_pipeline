@@ -338,10 +338,18 @@ The GitHub Actions ML pipeline includes three jobs:
 
 ![Architecture Diagram](Actions_pipeline.png)
 
+## TRAIN
+
 ![Architecture Diagram](train.png)
+
+## Predict
 
 ![Architecture Diagram](predict.png)
 
+## LLM & RAG
+
 ![Architecture Diagram](OLLAMA_RAG.png)
+
+## LLM Summary
 
 ![Architecture Diagram](LLM_SUMMARY.png)
