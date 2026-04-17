@@ -19,7 +19,7 @@ This project trains a churn prediction model, validates incoming CSV data before
 
 Most beginner ML projects stop at model training.
 
-This project goes further and shows the surrounding engineering work that companies actually care about:
+This project goes further and shows the surrounding engineering work that companies actually do:
 
 - batch ML pipeline design
 - model persistence and reuse
@@ -223,7 +223,6 @@ Runs the LLM and embedding models:
 - `docker-compose.yml` orchestrates local multi-container execution
 - `docker-compose.ci.yml` applies CI-specific override settings
 
-This is closer to a production-style separation than running everything in one process.
 
 ---
 
@@ -267,8 +266,6 @@ After a successful run, the pipeline produces:
 ---
 
 ## Example engineering value
-
-This project demonstrates how to move from “I trained a model” to “I built an ML workflow.”
 
 It shows:
 
