@@ -12,6 +12,9 @@ This project trains a churn prediction model, validates incoming CSV data before
 
 ![Architecture Diagram](image1.png)
 
+![Architecture Diagram](predict.png)
+
+
 ![Architecture Diagram](image2.png)
 
 
