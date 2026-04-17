@@ -12,8 +12,6 @@ This project trains a churn prediction model, validates incoming CSV data before
 
 ![Architecture Diagram](image1.png)
 
-![Architecture Diagram](predict.png)
-
 
 ![Architecture Diagram](image2.png)
 
@@ -341,6 +339,8 @@ The GitHub Actions ML pipeline includes three jobs:
 ![Architecture Diagram](Actions_pipeline.png)
 
 ![Architecture Diagram](train.png)
+
+![Architecture Diagram](predict.png)
 
 ![Architecture Diagram](OLLAMA_RAG.png)
 
